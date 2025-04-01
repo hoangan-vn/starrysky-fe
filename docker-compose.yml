@@ -1,0 +1,27 @@
+name: starrysky-frontend
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - starrysky-frontend-network
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - nextjs
+    links:
+      - nextjs
+    networks:
+      - starrysky-frontend-network
+networks:
+  starrysky-frontend-network:
+    driver: bridge

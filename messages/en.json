@@ -13,5 +13,9 @@
         "vi": "Vietnamese",
         "en": "English",
         "label": "Sprache"
-    }
+    },
+    "error": {
+        "title": "404 Not Found"
+    },
+    "endline": ""
 }

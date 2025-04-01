@@ -13,5 +13,9 @@
         "vi": "Tiếng Việt",
         "en": "Tiếng Anh",
         "label": "Sprache"
-    }
+    },
+    "error": {
+        "title": "404 Không tìm thấy"
+    },
+    "endline": ""
 }

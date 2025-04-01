@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { getLocale, getTranslations } from "next-intl/server";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
+import StoreProvider from "@/app/StoreProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,12 +14,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-
-// export const metadata: Metadata = {
-//   title: "Starry Sky",
-//   description: "Starry Sky",
-// };
 
 export async function generateMetadata({
   params: { locale },
@@ -45,7 +40,9 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <StoreProvider>
+          <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        </StoreProvider>
       </body>
     </html>
   );
