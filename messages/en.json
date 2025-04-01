@@ -1,0 +1,17 @@
+{
+    "metadata": {
+        "title": "Starry Sky",
+        "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+    },
+    "home": {
+        "home": "Home",
+        "title": "Starry Sky",
+        "price": "This product costs {price, number, currency}",
+        "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+    },
+    "LocaleSwitcher": {
+        "vi": "Vietnamese",
+        "en": "English",
+        "label": "Sprache"
+    }
+}

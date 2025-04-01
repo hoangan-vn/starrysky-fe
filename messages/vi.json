@@ -1,0 +1,17 @@
+{
+    "metadata": {
+        "title": "Starry Sky - Bầu trời sao",
+        "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+    },
+    "home": {
+        "home": "Trang chủ",
+        "title": "Starry Sky - Bầu trời sao",
+        "price": "This product costs {price, number, currency}",
+        "description": "© 2025 Starry Sky - Bầu trời sao, Inc. Developed by Hoang An"
+    },
+    "LocaleSwitcher": {
+        "vi": "Tiếng Việt",
+        "en": "Tiếng Anh",
+        "label": "Sprache"
+    }
+}
