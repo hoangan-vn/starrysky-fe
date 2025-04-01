@@ -17,5 +17,13 @@
     "error": {
         "title": "404 Không tìm thấy"
     },
+    "not-found": {
+        "title": "OPPS..., KHÔNG TÌM THẤY TRANG!",
+        "action": "Trở về trang chủ",
+        "content": "Xin lỗi, chúng tôi không thể tìm thấy trang bạn đang tìm kiếm."
+    },
+    "common": {
+        "loading": "Đang tải..."
+    },
     "endline": ""
 }
