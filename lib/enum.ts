@@ -1,4 +1,4 @@
 export enum AppLocales {
-  "VI" = "vi",
-  "EN" = "en"
+  'VI' = 'vi',
+  'EN' = 'en'
 }

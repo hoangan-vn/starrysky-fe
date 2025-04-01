@@ -1,12 +1,13 @@
-"use client";
-import { useEffect } from "react";
+'use client';
+
+import { useEffect } from 'react';
 // import Error from "next/error";
-import Document from "@/components/Document";
-import { useLocale, useTranslations } from "next-intl";
+import Document from '@/components/Document';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function NotFound() {
   const locale = useLocale();
-  const t = useTranslations("error");
+  const t = useTranslations('error');
 
   // Use client-side effect to handle non-static behavior
   useEffect(() => {
@@ -16,7 +17,7 @@ export default function NotFound() {
   return (
     <Document locale={locale}>
       {/* <Error statusCode={404} /> */}
-      {t("title")}
+      {t('title')}
     </Document>
   );
 }
