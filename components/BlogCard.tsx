@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { Skeleton } from '@/components/ui/skeleton';
+import { BlogsLink } from '@/lib/router/coordinator';
 
 interface BlogCardProps {
   title: string;
@@ -10,13 +10,7 @@ interface BlogCardProps {
   loading?: boolean;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({
-  title,
-  description,
-  imageSrc,
-  slug,
-  loading = false
-}) => {
+const BlogCard: React.FC<BlogCardProps> = ({ title, description, imageSrc, slug, loading = false }) => {
   return (
     <div className='bg-white rounded-lg shadow-md overflow-hidden'>
       {/* Image */}
@@ -41,9 +35,9 @@ const BlogCard: React.FC<BlogCardProps> = ({
           <>
             <h3 className='text-lg font-semibold uppercase'>{title}</h3>
             <p className='text-gray-600 mt-2 line-clamp-3'>{description}</p>
-            <Link href={`/blogs/${slug}`}>
+            <BlogsLink slug={slug}>
               <span className='text-orange-500 mt-4 inline-block hover:underline'>Read More</span>
-            </Link>
+            </BlogsLink>
           </>
         )}
       </div>
