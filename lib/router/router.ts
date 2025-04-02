@@ -1,4 +1,5 @@
 export const routerName = {
   home: '/',
-  about: '/about'
+  about: '/about',
+  blogs: '/blogs'
 };

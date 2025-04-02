@@ -11,6 +11,7 @@ import { AppIcon } from '@/components/icons';
 export default function Header() {
   const [searchQuery, setSearchQuery] = useState('');
   const [scrolled, setScrolled] = useState<boolean>(false);
+  const [shortcutKey, setShortcutKey] = useState('⌘ K');
 
   const navLinks = [
     { name: 'Docs', href: '/docs' },
@@ -40,6 +41,19 @@ export default function Header() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+  }, []);
+
+  // Detect OS on component mount
+  useEffect(() => {
+    // Check if we're on macOS or iOS
+    const isMac =
+      typeof navigator !== 'undefined' &&
+      (navigator.platform.toUpperCase().indexOf('MAC') >= 0 ||
+        navigator.userAgent.toUpperCase().indexOf('MAC') >= 0 ||
+        navigator.userAgent.toUpperCase().indexOf('IPHONE') >= 0 ||
+        navigator.userAgent.toUpperCase().indexOf('IPAD') >= 0);
+
+    setShortcutKey(isMac ? '⌘ K' : 'Ctrl+K');
   }, []);
 
   return (
@@ -77,7 +91,9 @@ export default function Header() {
             onChange={(e) => setSearchQuery(e.target.value)}
             className='w-64'
           />
-          <span className='absolute right-2 top-1/2 transform -translate-y-1/2 text-sm text-gray-500'>⌘ K</span>
+          <span className='absolute right-2 top-1/2 transform -translate-y-1/2 text-sm text-gray-500'>
+            {shortcutKey}
+          </span>
         </div>
         <LocaleSwitcher />
       </div>

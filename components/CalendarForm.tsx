@@ -10,17 +10,29 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Calendar } from '@/components/ui/calendar';
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 
 const FormSchema = z.object({
   dob: z.date({
     required_error: 'A date of birth is required.'
-  })
+  }),
+  time: z
+    .string({
+      required_error: 'A time is required.'
+    })
+    .regex(/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/, {
+      message: 'Please enter a valid time in HH:mm format.'
+    })
 });
 
 export function CalendarForm() {
   const form = useForm<z.infer<typeof FormSchema>>({
-    resolver: zodResolver(FormSchema)
+    resolver: zodResolver(FormSchema),
+    defaultValues: {
+      dob: undefined,
+      time: ''
+    }
   });
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
@@ -33,9 +45,12 @@ export function CalendarForm() {
     });
   }
 
+  const selectedDate = form.watch('dob'); // Watch the 'dob' field to conditionally show the time picker
+
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
+        {/* Date Picker */}
         <FormField
           control={form.control}
           name='dob'
@@ -69,6 +84,25 @@ export function CalendarForm() {
             </FormItem>
           )}
         />
+
+        {/* Time Picker (shown only if a date is selected) */}
+        {selectedDate && (
+          <FormField
+            control={form.control}
+            name='time'
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Time</FormLabel>
+                <FormControl>
+                  <Input type='time' {...field} className='w-[240px]' />
+                </FormControl>
+                <FormDescription>Select the time for your appointment.</FormDescription>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        )}
+
         <Button type='submit'>Submit</Button>
       </form>
     </Form>

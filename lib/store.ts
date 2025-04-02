@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '@/lib/features/counter/counterSlice';
+import breadcrumbReducer from '@/lib/features/breadcumb/breadcrumbSlice';
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      counter: counterReducer
+      breadcrumb: breadcrumbReducer
     }
   });
 };
