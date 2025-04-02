@@ -5,10 +5,10 @@ import { Input } from '@/components/ui/input';
 import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { HomeLink } from '@/lib/router/coordinator';
-import LocaleSwitcher from '@/components/LocaleSwitcher';
+import { LocaleSwitcher } from '@/components/locale';
 import { AppIcon } from '@/components/icons';
 
-const Header = () => {
+export default function Header() {
   const [searchQuery, setSearchQuery] = useState('');
   const [scrolled, setScrolled] = useState<boolean>(false);
 
@@ -83,6 +83,4 @@ const Header = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}

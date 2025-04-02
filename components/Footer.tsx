@@ -4,8 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Github, Twitter, MessageCircle } from 'lucide-react';
 import { HomeLink } from '@/lib/router/coordinator';
 import { AppIcon } from './icons';
-
-const Footer = () => {
+export default function Footer() {
   const footerLinks = [
     {
       title: 'Resources',
@@ -58,9 +57,7 @@ const Footer = () => {
         <div className='mb-8'>
           <div className='flex items-center space-x-2'>
             <AppIcon width={40} height={40} />
-            <HomeLink className='text-lg font-bold'>
-              Starry Sky
-            </HomeLink>
+            <HomeLink className='text-lg font-bold'>Starry Sky</HomeLink>
           </div>
         </div>
 
@@ -115,6 +112,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

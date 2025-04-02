@@ -1,29 +1,66 @@
 {
     "metadata": {
-        "title": "Starry Sky - Bầu trời sao",
-        "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+        "title": "Bầu Trời Đầy Sao",
+        "description": "© 2025 Công ty Bầu Trời Đầy Sao. Phát triển bởi Hoàng An"
     },
     "home": {
         "home": "Trang chủ",
-        "title": "Starry Sky - Bầu trời sao",
-        "price": "This product costs {price, number, currency}",
-        "description": "© 2025 Starry Sky - Bầu trời sao, Inc. Developed by Hoang An"
+        "title": "Bầu Trời Đầy Sao",
+        "description": "© 2025 Công ty Bầu Trời Đầy Sao. Phát triển bởi Hoàng An"
     },
     "LocaleSwitcher": {
         "vi": "Tiếng Việt",
         "en": "Tiếng Anh",
-        "label": "Sprache"
+        "label": "Ngôn ngữ"
     },
     "error": {
-        "title": "404 Không tìm thấy"
+        "title": "404 Không Tìm Thấy"
     },
     "not-found": {
-        "title": "OPPS..., KHÔNG TÌM THẤY TRANG!",
-        "action": "Trở về trang chủ",
+        "title": "ÔI..., KHÔNG TÌM THẤY TRANG!",
+        "action": "Quay lại trang chủ",
         "content": "Xin lỗi, chúng tôi không thể tìm thấy trang bạn đang tìm kiếm."
     },
     "common": {
         "loading": "Đang tải..."
+    },
+    "table": {
+        "columns": {
+            "user": "Người dùng",
+            "phone": "Điện thoại",
+            "email": "Email",
+            "location": "Vị trí",
+            "role": "Vai trò",
+            "rtn": "RTN",
+            "other-info": "Thông tin khác",
+            "status": "Trạng thái"
+        },
+        "no-data-results": "Không có kết quả dữ liệu",
+        "asc": "Tăng dần",
+        "desc": "Giảm dần",
+        "hide": "Ẩn",
+        "no-filter-results": "Không có kết quả lọc",
+        "clean-filters": "Xóa bộ lọc",
+        "go-to-previous-page": "Đi đến trang trước",
+        "go-to-last-page": "Đi đến trang cuối",
+        "go-to-next-page": "Đi đến trang tiếp theo",
+        "rows-per-page": "Số hàng mỗi trang",
+        "rows-selected": "hàng được chọn",
+        "page": "Trang",
+        "of": "của",
+        "open-menu": "Mở menu",
+        "view": "Xem",
+        "update": "Cập nhật",
+        "delete": "Xóa",
+        "filter": "Lọc",
+        "see-columns": "Xem cột",
+        "edit-columns": "Chỉnh sửa cột",
+        "status": "Trạng thái",
+        "selected": "Đã chọn",
+        "active": "hoạt động",
+        "inactive": "không hoạt động",
+        "client": "khách hàng",
+        "provider": "nhà cung cấp"
     },
     "endline": ""
 }

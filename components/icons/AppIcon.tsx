@@ -1,4 +1,3 @@
-import { IconProps } from '@/lib/types';
 import * as React from 'react';
 
 const AppIcon = (props: IconProps) => (

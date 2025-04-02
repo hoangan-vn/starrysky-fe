@@ -6,7 +6,6 @@
     "home": {
         "home": "Home",
         "title": "Starry Sky",
-        "price": "This product costs {price, number, currency}",
         "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
     },
     "LocaleSwitcher": {
@@ -24,6 +23,44 @@
     },
     "common": {
         "loading": "Loading..."
+    },
+    "table": {
+        "columns": {
+            "user": "User",
+            "phone": "Phone",
+            "email": "Email",
+            "location": "Location",
+            "role": "Role",
+            "rtn": "RTN",
+            "other-info": "Other Info",
+            "status": "Status"
+        },
+        "no-data-results": "No data results",
+        "asc": "Asc",
+        "desc": "Desc",
+        "hide": "Hide",
+        "no-filter-results": "No Filter results",
+        "clean-filters": "Clean Filters",
+        "go-to-previous-page": "Go to previous page",
+        "go-to-last-page": "Go to last page",
+        "go-to-next-page": "Go to next page",
+        "rows-per-page": "Rows per page",
+        "rows-selected": "row(s) selected",
+        "page": "Page",
+        "of": "of",
+        "open-menu": "Open Menu",
+        "view": "View",
+        "update": "Update",
+        "delete": "Delete",
+        "filter": "Filter",
+        "see-columns": "See Columns",
+        "edit-columns": "Edit Columns",
+        "status": "Status",
+        "selected": "Selected",
+        "active": "active",
+        "inactive": "inactive",
+        "client": "client",
+        "provider": "provider"
     },
     "endline": ""
 }
