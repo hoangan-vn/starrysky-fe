@@ -1,7 +1,23 @@
 {
     "metadata": {
         "title": "Starry Sky",
-        "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+        "description": "© 2025 Starry Sky, Inc. Developed by Hoang An",
+        "blogs": {
+            "title": "Starry Sky",
+            "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+        },
+        "about": {
+            "title": "Starry Sky",
+            "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+        },
+        "sign-in": {
+            "title": "Starry Sky",
+            "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+        },
+        "sign-up": {
+            "title": "Starry Sky",
+            "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+        }
     },
     "home": {
         "home": "Home",

@@ -18,7 +18,13 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, description, imageSrc, slug,
         {loading ? (
           <Skeleton className='h-full w-full rounded-t-lg' />
         ) : (
-          <Image src={imageSrc} alt={title} layout='fill' objectFit='cover' className='rounded-t-lg' />
+          <Image
+            src={imageSrc}
+            alt={title}
+            layout='fill'
+            objectFit='cover'
+            className='rounded-t-lg transform transition duration-300 ease-in-out hover:scale-110 hover:blur-[1px]'
+          />
         )}
       </div>
       {/* Content */}

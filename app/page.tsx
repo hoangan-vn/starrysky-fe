@@ -5,6 +5,7 @@ import { CalendarForm } from '@/components/CalendarForm';
 import { Confirm } from '@/components/Conform';
 import ContactForm from '@/components/ContactForm';
 import LatestBlogs from '@/components/LatestBlogs';
+import SignUpPortal from '@/components/portal/SignUpPortal';
 import Table from '@/components/table/Table';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -40,10 +41,10 @@ export default function Home() {
     handleCaptchaSubmission(token);
   };
 
-  function handleExpired() {
+  const handleExpired = () => {
     setIsVerified(false);
     // recaptchaRef.current.reset();
-  }
+  };
 
   return (
     <div className='flex items-center justify-items-center min-h-screen px-8 pb-20 sm:px-20 font-[family-name:var(--font-geist-sans)]'>
@@ -60,7 +61,6 @@ export default function Home() {
           </li>
           <li className='tracking-[-.01em]'>{t('home')}</li>
         </ol>
-
         <div className='flex gap-4 items-center flex-col'>
           <Table></Table>
           <ContactForm />
@@ -83,6 +83,7 @@ export default function Home() {
             </button>
           </div>
         </div>
+        <SignUpPortal />
       </main>
     </div>
   );
