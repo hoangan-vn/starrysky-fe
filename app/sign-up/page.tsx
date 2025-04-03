@@ -54,8 +54,9 @@ export default function SignUpPage() {
 
           {/* Terms and Privacy */}
           <p className='text-xs text-gray-500 text-center mt-4'>
-            By clicking continue, you agree to our <TermsLink className='underline'>Terms of Service</TermsLink> and{' '}
-            <PrivacyLink className='underline'>Privacy Policy</PrivacyLink>.
+            By clicking continue, you agree to our
+            <TermsLink className='underline'>Terms of Service</TermsLink>
+            and <PrivacyLink className='underline'>Privacy Policy</PrivacyLink>.
           </p>
         </div>
       </div>
