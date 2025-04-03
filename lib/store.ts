@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import breadcrumbReducer from '@/lib/features/breadcumb/breadcrumbSlice';
+import portalReducer from '@/lib/features/portal/portalSlice';
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      breadcrumb: breadcrumbReducer
+      breadcrumb: breadcrumbReducer,
+      portal: portalReducer
     }
   });
 };
