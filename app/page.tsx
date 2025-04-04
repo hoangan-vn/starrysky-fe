@@ -63,13 +63,14 @@ export default function Home() {
         </ol>
         <div className='flex gap-4 items-center flex-col'>
           <Table></Table>
+          <Image src='/test.png' width={1200} height={500} alt='test' />
           <ContactForm />
           <LatestBlogs />
           <CalendarForm />
           <Confirm />
           <div>
             <ReCAPTCHA
-              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
+              sitekey={process.env['NEXT_PUBLIC_RECAPTCHA_SITE_KEY'] || ''}
               ref={recaptchaRef}
               onChange={handleChange}
               onExpired={handleExpired}

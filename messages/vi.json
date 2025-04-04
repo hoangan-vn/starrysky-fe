@@ -62,5 +62,19 @@
         "client": "khách hàng",
         "provider": "nhà cung cấp"
     },
+    "header": {
+        "header-contact": {
+            "question": "Cần hỗ trợ?",
+            "tel": {
+                "ref": "0775698919",
+                "tag": "0 775 698 919"
+            },
+            "zalo": {
+                "ref": "0775698919",
+                "tag": "0 775 259 919"
+            },
+            "mail": "bautroisao.tarrysky@gmail.com"
+        }
+    },
     "endline": ""
 }

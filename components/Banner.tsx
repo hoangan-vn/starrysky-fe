@@ -31,7 +31,7 @@ const Banner = () => {
               alt='Traveler with passport'
               width={400}
               height={400}
-              className='relative z-20 object-cover'
+              className='relative z-30 object-cover'
             />
           </div>
         </div>

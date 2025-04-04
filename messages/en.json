@@ -78,5 +78,19 @@
         "client": "client",
         "provider": "provider"
     },
+    "header": {
+        "header-contact": {
+            "question": "Have a question?",
+            "tel": {
+                "ref": "0775698919",
+                "tag": "+(84) 775 698 919"
+            },
+            "zalo": {
+                "ref": "0775698919",
+                "tag": "+(84) 775 259 919"
+            },
+            "mail": "bautroisao.tarrysky@gmail.com"
+        }
+    },
     "endline": ""
 }
