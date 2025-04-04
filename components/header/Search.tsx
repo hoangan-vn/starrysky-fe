@@ -1,27 +1,35 @@
+import { useEffect, useState, useRef } from 'react';
+import { SearchIcon } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+
 import { Input } from '@/components/ui/input';
 import { useResponsive } from '@/hooks/useResponsive';
-import { useEffect, useState, useRef } from 'react';
-import RenderIf from '../RenderIf';
-import { SearchIcon } from 'lucide-react';
+import RenderIf from '@/components/widgets/RenderIf';
+import { cn } from '@/lib/utils';
+import { DeviceBrandtypeEnum } from '@/lib/enum';
 
-export default function Search() {
+type SearchProps = {
+  className?: string;
+};
+
+export default function Search({ className }: SearchProps) {
+  const t = useTranslations('search');
   const [searchQuery, setSearchQuery] = useState('');
-  const [shortcutKey, setShortcutKey] = useState('⌘ K');
+  const [shortcutKey, setShortcutKey] = useState(t('apple-shortcut'));
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { isMobile, isTablet, isLaptop, isDesktop } = useResponsive();
-  const searchRef = useRef<HTMLDivElement>(null); // Ref để theo dõi vùng search
+  const searchRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const isMac =
       typeof navigator !== 'undefined' &&
-      (navigator.userAgent.toUpperCase().indexOf('MAC') >= 0 ||
-        navigator.userAgent.toUpperCase().indexOf('IPHONE') >= 0 ||
-        navigator.userAgent.toUpperCase().indexOf('IPAD') >= 0);
+      (navigator.userAgent.toUpperCase().indexOf(DeviceBrandtypeEnum.mac) >= 0 ||
+        navigator.userAgent.toUpperCase().indexOf(DeviceBrandtypeEnum.iphone) >= 0 ||
+        navigator.userAgent.toUpperCase().indexOf(DeviceBrandtypeEnum.ipad) >= 0);
 
-    setShortcutKey(isMac ? '⌘ K' : 'Ctrl+K');
-  }, []);
+    setShortcutKey(isMac ? t('apple-shortcut') : t('windows-shortcut'));
+  }, [t]);
 
-  // Xử lý nhấp chuột ra ngoài
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
@@ -29,24 +37,22 @@ export default function Search() {
       }
     };
 
-    // Chỉ thêm listener khi isSearchOpen = true và trên mobile/tablet
     if (isSearchOpen && (isMobile || isTablet)) {
       document.addEventListener('mousedown', handleClickOutside);
     }
 
-    // Cleanup listener khi component unmount hoặc isSearchOpen thay đổi
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isSearchOpen, isMobile, isTablet]);
 
   return (
-    <div className='relative' ref={searchRef}>
+    <div className={cn('relative', className)} ref={searchRef}>
       <RenderIf condition={isLaptop || isDesktop}>
         <>
           <Input
             type='text'
-            placeholder='Search documentation...'
+            placeholder={t('placeholder')}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className='w-64'
@@ -69,7 +75,7 @@ export default function Search() {
             <>
               <Input
                 type='text'
-                placeholder='Search documentation...'
+                placeholder={t('placeholder')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className='w-64'

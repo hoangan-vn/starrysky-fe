@@ -1,12 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import breadcrumbReducer from '@/lib/features/breadcumb/breadcrumbSlice';
 import portalReducer from '@/lib/features/portal/portalSlice';
+import headerHeightReducer from '@/lib/features/header-height/headerHeightSlice';
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       breadcrumb: breadcrumbReducer,
-      portal: portalReducer
+      portal: portalReducer,
+      headerHeight: headerHeightReducer
     }
   });
 };

@@ -92,5 +92,24 @@
             "mail": "bautroisao.tarrysky@gmail.com"
         }
     },
+    "search": {
+        "placeholder": "Search documentation...",
+        "windows-shortcut": "Ctrl+K",
+        "apple-shortcut": "⌘ K"
+    },
+    "banner": {
+        "title": "FASTRACK",
+        "slogan": "Time-saving solution for your flight!"
+    },
+    "benefits": {
+        "convenience": "Convenience",
+        "quick-check-in": "Quick check-in",
+        "time-saving": "Time-saving"
+    },
+    "services": {
+        "title": "Fast Track Service",
+        "description": "We offer a wide range of airport services, all-inclusive Fast Track, eSIM, and Car Transfer (Pickup & Dropoff), ensuring a seamless start to your journey in Vietnam. Our expert staff will ensure a smooth transition to your dream destination by handling complicated procedures, delivering effective communication, and giving settlement advice with precision.",
+        "quote": "“Let us be your trustworthy airport buddy”, and you will never regret it."
+    },
     "endline": ""
 }

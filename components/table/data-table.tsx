@@ -20,7 +20,7 @@ import { DataTablePagination } from './data-table-pagination';
 import { DataTableToolbar } from './data-table-toolbar';
 import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
-import RenderIf from '../RenderIf';
+import RenderIf from '../widgets/RenderIf';
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];

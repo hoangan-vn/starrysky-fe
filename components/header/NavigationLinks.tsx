@@ -1,9 +1,14 @@
 import NavLink from '@/lib/router/NavLink';
 import { navLinks } from '@/lib/router/router';
-import RenderIf from '../RenderIf';
+import RenderIf from '../widgets/RenderIf';
 import { usePathname, useRouter } from 'next/navigation';
+import { cn } from '@/lib/utils';
 
-export default function NavigationLinks() {
+type NavigationLinksProps = {
+  className?: string;
+};
+
+export default function NavigationLinks({ className }: NavigationLinksProps) {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -24,7 +29,7 @@ export default function NavigationLinks() {
   };
 
   return (
-    <nav className='flex space-x-4'>
+    <nav className={cn('flex space-x-4', className)}>
       {navLinks.map((link) => (
         <div key={link.name.toLowerCase().replace(/\s+/g, '-')}>
           <RenderIf condition={link.href !== ''}>

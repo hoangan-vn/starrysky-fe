@@ -76,5 +76,14 @@
             "mail": "bautroisao.tarrysky@gmail.com"
         }
     },
+    "search": {
+        "placeholder": "Tìm kiếm...",
+        "windows-shortcut": "Ctrl+K",
+        "apple-shortcut": "⌘ K"
+    },
+    "banner": {
+        "title": "FASTRACK",
+        "slogan": "Giải pháp tiết kiệm thời gian cho chuyến bay của bạn!"
+    },
     "endline": ""
 }
