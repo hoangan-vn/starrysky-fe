@@ -7,7 +7,7 @@ export async function POST(req: Request) {
 
   const data = await req.json();
   const { token } = data;
-  const secretKey: string | undefined = process.env['RECAPTCHA_SECRET_KEY'];
+  const secretKey: string | undefined = process.env.RECAPTCHA_SECRET_KEY;
 
   if (!token) {
     return new Response(JSON.stringify({ message: 'Token not found' }), {
