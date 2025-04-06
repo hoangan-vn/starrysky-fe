@@ -18,7 +18,7 @@ export default function SignUpPortal() {
 
     const timer = setTimeout(() => {
       setIsModalOpen(true);
-    }, 10000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [showSignUpModal]);

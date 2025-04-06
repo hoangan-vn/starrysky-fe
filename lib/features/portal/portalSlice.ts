@@ -10,7 +10,7 @@ const getInitialModalState = (): ModalState => {
   const showPortalInStored = typeof window !== 'undefined' ? localStorage.getItem('showPortalIn') : null;
 
   const currentTime = Date.now();
-  const sixtyMinutesInMs = 60 * 60 * 1000;
+  const sixtyMinutesInMs = 10 * 60 * 1000;
 
   if (showPortalInStored) {
     const lastClosedTimestamp = parseInt(showPortalInStored, 10);
