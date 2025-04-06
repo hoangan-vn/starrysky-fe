@@ -7,13 +7,13 @@ export default function Services() {
   return (
     <div className='flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto py-12 px-4'>
       <div className='relative w-full md:w-1/2 flex justify-center mb-8 md:mb-0'>
-        <div className='absolute w-80 h-80 rounded-full bg-yellow-400 opacity-50 border-2 border-dashed border-gray-500'></div>
+        <div className='absolute w-80 h-80'></div>
         <Image
-          src='/services.png'
+          src='/fast-track.png'
           alt='Travel illustration'
           width={400}
           height={300}
-          className='relative z-10'
+          className='rounded-lg'
         />
       </div>
 

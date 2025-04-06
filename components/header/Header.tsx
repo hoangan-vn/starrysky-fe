@@ -12,6 +12,7 @@ import Logo from '../logo/Logo';
 import { useAppDispatch } from '@/hooks/hooks';
 import { setHeaderHeight } from '@/lib/features/header-height/headerHeightSlice';
 import Flexibility from '../widgets/Flexibility';
+import Navbar from './Navbar';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -68,7 +69,9 @@ export default function Header() {
           <header
             className={cn('flex items-center justify-between px-6 py-4 border-b bg-white', scrolled && 'shadow-md')}
           >
-            <div></div>
+            <div>
+              <Navbar />
+            </div>
             <Logo />
             <div className='flex items-center space-x-2'>
               <Search />
