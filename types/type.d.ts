@@ -18,3 +18,8 @@ type IconProps = {
   height?: number;
   className?: string;
 };
+
+type NavLink = {
+  name: string;
+  href: string;
+};

@@ -4,9 +4,10 @@ import { getLocale, getTranslations } from 'next-intl/server';
 import './globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import StoreProvider from '@/app/StoreProvider';
-import Header from '@/components/Header';
+import Header from '@/components/header/Header';
 import Footer from '@/components/Footer';
 import { Toaster } from '@/components/ui/sonner';
+import ChatButton from '@/components/chat/ChatButton';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -43,6 +44,7 @@ export default async function RootLayout({
             {children}
             <Footer />
             <Toaster />
+            <ChatButton />
           </NextIntlClientProvider>
         </StoreProvider>
       </body>

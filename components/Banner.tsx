@@ -1,43 +1,39 @@
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+import { Plane } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { useAppSelector } from '@/hooks/hooks';
+import { useResponsive } from '@/hooks/useResponsive';
+import RenderIf from './widgets/RenderIf';
 
-const Banner = () => {
+export default function Banner() {
+  const t = useTranslations('banner');
+  const headerHeight = useAppSelector((state) => state.headerHeight.headerHeight);
+  const { isMobile, isTablet } = useResponsive();
   return (
-    <section className='w-full h-[100vh] min-h-[50vh] flex items-center justify-center bg-white'>
-      <div className='container mx-auto flex flex-col md:flex-row items-center justify-between px-6'>
-        {/* Left Side: Text and Button */}
-        <div className='md:w-1/2 text-center md:text-left mb-8 md:mb-0'>
-          <h1 className='text-4xl md:text-5xl font-bold leading-tight'>
-            We Save Time <br />
-            And Provide <br />
-            Convenience <br />
-            For Your Trip
-          </h1>
-          <Button className='mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full'>
-            Get Started
-          </Button>
-        </div>
+    <div className='relative w-full overflow-hidden' style={{ height: `calc(100vh - ${headerHeight}px)` }}>
+      <Image
+        src='/banner-bg.png'
+        alt='Airplane in the sky'
+        layout='fill'
+        objectFit='cover'
+        className='scale-105 blur-[10px]'
+      />
 
-        {/* Right Side: Image with Circular Background */}
-        <div className='md:w-1/2 relative flex justify-center'>
-          <div className='relative'>
-            {/* Circular Background */}
-            <div className='absolute inset-0 rounded-full w-[300px] h-[300px] md:w-[400px] md:h-[400px] z-0'></div>
-            {/* Dashed Border */}
-            <div className='absolute inset-0 rounded-full w-[300px] h-[300px] md:w-[400px] md:h-[400px] border-2 border-dashed border-gray-500 z-10'></div>
-            {/* Image */}
-            <Image
-              src='/playstore-icon.png' // Replace with the actual path to your image
-              alt='Traveler with passport'
-              width={400}
-              height={400}
-              className='relative z-20 object-cover'
-            />
-          </div>
-        </div>
+      <div className='absolute inset-0 flex flex-col items-center justifying-center text-center text-white p-4'>
+        <h1 className='text-5xl md:text-6xl font-bold tracking-wider text-white drop-shadow-lg'>{t('title')}</h1>
+        <p className='mt-2 text-lg md:text-3xl font-medium drop-shadow-md mb-10 text-[#0f5184]'>
+          {t('slogan')} <Plane className='inline-block w-5 h-5 ml-1' />
+        </p>
+        <RenderIf condition={isMobile}>
+          <Image src='/banner-center.png' alt='Airplane in the sky' width={400} height={200} className='rounded-lg' />
+        </RenderIf>
+        <RenderIf condition={isTablet && !isMobile}>
+          <Image src='/banner-center.png' alt='Airplane in the sky' width={500} height={250} className='rounded-lg' />
+        </RenderIf>
+        <RenderIf condition={!(isMobile || isTablet)}>
+          <Image src='/banner-center.png' alt='Airplane in the sky' width={700} height={300} className='rounded-lg' />
+        </RenderIf>
       </div>
-    </section>
+    </div>
   );
-};
-
-export default Banner;
+}

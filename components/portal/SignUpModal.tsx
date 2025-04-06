@@ -1,4 +1,3 @@
-import { useDispatch } from 'react-redux';
 import { setShowSignUpModal } from '@/lib/features/portal/portalSlice';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -13,6 +12,7 @@ import {
 
 import { useForm } from 'react-hook-form';
 import { PrivacyLink, TermsLink } from '@/lib/router/coordinator';
+import { useAppDispatch } from '@/hooks/hooks';
 
 interface SignUpModalProps {
   isOpen: boolean;
@@ -24,7 +24,7 @@ interface SignUpFormData {
 }
 
 export default function SignUpModal({ isOpen, onClose }: SignUpModalProps) {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const {
     register,
     handleSubmit,

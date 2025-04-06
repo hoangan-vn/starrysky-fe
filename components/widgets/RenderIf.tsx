@@ -6,5 +6,5 @@ type RenderIfProps = {
 };
 
 export default function RenderIf({ condition, children }: RenderIfProps) {
-  return condition ? children : <></>;
+  return condition ? <>{children}</> : null;
 }

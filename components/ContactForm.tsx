@@ -31,7 +31,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='max-w-2xl mx-auto p-6'>
+    <div id='contact-us' className='h-[100vh] max-w-2xl mx-auto p-6'>
       <h2 className='text-2xl font-bold mb-6'>Contact Us</h2>
       <form onSubmit={handleSubmit} className='space-y-6'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
