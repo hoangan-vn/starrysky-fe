@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl';
+
 export const routerName = {
   home: '/',
   about: '/about-us',
@@ -8,10 +10,14 @@ export const routerName = {
   privacy: '/privacy'
 };
 
-export const navLinks: NavLink[] = [
-  { name: 'Services', href: '/services' },
-  { name: 'Pricing', href: '/pricing' },
-  { name: 'Blogs', href: '/blogs' },
-  { name: 'About Us', href: '/about-us' },
-  { name: 'Contact Us', href: '' }
-];
+export const useNavLinks = (): NavLink[] => {
+  const t = useTranslations('nav');
+
+  return [
+    { id: 'services', name: t('services'), href: '/services' },
+    { id: 'pricing', name: t('pricing'), href: '/pricing' },
+    { id: 'blogs', name: t('blogs'), href: '/blogs' },
+    { id: 'about-us', name: t('about-us'), href: '/about-us' },
+    { id: 'contact', name: t('contact'), href: '' }
+  ];
+};

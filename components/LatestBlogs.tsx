@@ -7,42 +7,42 @@ const blogPosts = [
     title: 'Can Citizen Identity Cards Replace Passports?',
     description:
       'The recent introduction of Citizen Identity Cards raised questions on their potential to replace passports for entry/exit Vietnam',
-    imageSrc: '/playstore-icon.png', // Replace with actual image path
+    imageSrc: '/images/playstore-icon.png', // Replace with actual image path
     slug: 'can-citizen-identity-cards-replace-passports'
   },
   {
     title: 'Van Phuc Silk Village, a Thousand-Year-Old Traditional Beauty of Vietnam',
     description:
       'Van Phuc, or Ha Dong Silk Village, is one of the must-visit stops for foreigners when traveling to the capital city of Hanoi, Vietnam',
-    imageSrc: '/playstore-icon.png', // Replace with actual image path
+    imageSrc: '/images/playstore-icon.png', // Replace with actual image path
     slug: 'van-phuc-silk-village'
   },
   {
     title: 'Discover Sao Ha "Hell" Village: From Real-life to Viral Vietnamese-based Horror Series',
     description:
       "Sao Ha Village (Ha Giang) has gained online fame after being showcased in a Vietnamese Netflix horror series titled 'Hellbound Village'",
-    imageSrc: '/playstore-icon.png', // Replace with actual image path
+    imageSrc: '/images/playstore-icon.png', // Replace with actual image path
     slug: 'discover-sao-ha-hell-village'
   },
   {
     title: 'Passengers Can Access To Wifi In Domestic and International Vietnam Airlines Flights',
     description:
       'Vietnam Airlines and VNPT have just signed a cooperation agreement to deploy in-flight internet service',
-    imageSrc: '/playstore-icon.png', // Replace with actual image path
+    imageSrc: '/images/playstore-icon.png', // Replace with actual image path
     slug: 'passengers-can-access-wifi-vietnam-airlines'
   },
   {
     title: 'Introduce to Traveler: Business Lounge at Tan Son Nhat International Airport',
     description:
       'Business Lounge is an excellent addition to travelers’ airport experience when visiting Vietnam, amid the bustling atmosphere of busy airports',
-    imageSrc: '/playstore-icon.png', // Replace with actual image path
+    imageSrc: '/images/playstore-icon.png', // Replace with actual image path
     slug: 'business-lounge-tan-son-nhat'
   },
   {
     title: 'The Ultimate Guide For Using Vietnamese Airlines’ Online Check-in System',
     description:
       'You can complete check-in online anywhere and anytime within 24 hours to 60 minutes before your scheduled flight',
-    imageSrc: '/playstore-icon.png', // Replace with actual image path
+    imageSrc: '/images/playstore-icon.png', // Replace with actual image path
     slug: 'ultimate-guide-online-checkin-vietnamese-airlines'
   }
 ];
