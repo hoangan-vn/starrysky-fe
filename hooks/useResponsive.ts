@@ -1,8 +1,13 @@
 import { useState, useEffect } from 'react';
 
 // Define breakpoint sizes (in pixels)
+// sm: ≥ 640px (màn hình nhỏ, như điện thoại landscape)
+// md: ≥ 768px (màn hình trung bình, như máy tính bảng)
+// lg: ≥ 1024px (màn hình lớn, như laptop)
+// xl: ≥ 1280px (màn hình rất lớn, như desktop)
+// 2xl: ≥ 1536px (màn hình siêu lớn)
 export const breakpoints = {
-  mobile: 480,
+  mobile: 640,
   tablet: 768,
   laptop: 1024,
   desktop: 1280

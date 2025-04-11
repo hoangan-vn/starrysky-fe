@@ -11,5 +11,4 @@ export const users: User[] = [
     rtn: 'US2347908701',
     otherInformation: 'John Miller works in a tech startup in Seattle.'
   }
-  // ...
 ];

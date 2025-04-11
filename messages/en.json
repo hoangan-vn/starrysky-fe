@@ -86,7 +86,7 @@
                 "tag": "+(84) 775 698 919"
             },
             "zalo": {
-                "ref": "0775698919",
+                "ref": "0775259919",
                 "tag": "+(84) 775 259 919"
             },
             "mail": "bautroisao.tarrysky@gmail.com"
@@ -98,7 +98,7 @@
         "apple-shortcut": "⌘ K"
     },
     "banner": {
-        "title": "FASTRACK",
+        "title": "FAST TRACK",
         "slogan": "Time-saving solution for your flight!"
     },
     "benefits": {
@@ -108,8 +108,92 @@
     },
     "services": {
         "title": "Fast Track Service",
-        "description": "We offer a wide range of airport services, all-inclusive Fast Track, eSIM, and Car Transfer (Pickup & Dropoff), ensuring a seamless start to your journey in Vietnam. Our expert staff will ensure a smooth transition to your dream destination by handling complicated procedures, delivering effective communication, and giving settlement advice with precision.",
-        "quote": "“Let us be your trustworthy airport buddy”, and you will never regret it."
+        "description": "Our Fast Track Service ensures a seamless airport experience by meeting guests at the arrival gate or a designated pick-up point at the international terminal, assisting with visa processing if applicable, guiding them through immigration and customs procedures, helping retrieve their luggage, and supporting with security screening procedures. Finally, we escort guests and their luggage to their vehicle or to the boarding lounge for a smooth transition.",
+        "quote": "\"Let us be your trustworthy airport buddy\", and you will never regret it."
+    },
+    "nav": {
+        "services": "Services",
+        "pricing": "Pricing",
+        "blogs": "Blogs",
+        "about-us": "About Us",
+        "contact": "Contact"
+    },
+    "our-service": {
+        "international": {
+            "title": "International",
+            "description": "",
+            "regularArrival": {
+                "title": "Regular Arrival Service",
+                "description": "<li>Pick up guests at the arrival gate or designated pick-up point at the international terminal</li><li>Assist guests with visa procedures (if applicable)</li><li>Assist guests with immigration procedures</li><li>Assist guests with customs procedures</li><li>Assist guests with luggage retrieval</li><li>Escort guests with their luggage to the vehicle</li>"
+            },
+            "vipBArrival": {
+                "title": "VIP B Arrival",
+                "description": "<li>Staff picks up guests at the 'Ông Lớn' bridge, in the area heading straight to CACK without needing to go through the luggage claim area, and escorts guests outside the terminal to their vehicle</li><li>(The staff will take the guest's passport for procedures when meeting the guest and return it to the guest once they are in the vehicle)</li>"
+            },
+            "regularDeparture": {
+                "title": "Regular Departure Service",
+                "description": "<li>Pick up guests at the international passenger departure hall</li><li>Assist guests with check-in procedures</li><li>Assist guests with departure procedures</li><li>Assist guests with customs procedures</li><li>Assist guests with security screening procedures</li><li>Escort guests to the boarding gate</li>"
+            },
+            "regularVipArrival": {
+                "title": "Regular VIP Arrival",
+                "description": "<li>Pick up guests at the immigration area, assist with visa procedures if needed - Guide guests to the luggage claim area, guests retrieve their luggage, then proceed outside</li>"
+            },
+            "regularVipDeparture": {
+                "title": "Regular VIP Departure",
+                "description": "<li>Escort guests for departure procedures (Guests check in themselves, staff escorts them during departure + provides a small gift)</li>"
+            }
+        },
+        "domestic": {
+            "title": "Domestic",
+            "description": "",
+            "regularArrival": {
+                "title": "Regular Arrival Service",
+                "description": "<li>Pick up guests at the arrival gate or designated pick-up point at the domestic terminal</li><li>Assist guests with luggage retrieval</li><li>Escort guests with their luggage to the vehicle</li>"
+            },
+            "regularDeparture": {
+                "title": "Regular Departure Service",
+                "description": "<li>Pick up guests at the domestic passenger departure hall</li><li>Assist guests with check-in procedures</li><li>Assist guests with security procedures</li><li>Escort guests to the aircraft</li>"
+            }
+        },
+        "fastTrack": {
+            "title": "FAST TRACK AIRPORT SERVICE"
+        },
+        "apply-now": "Apply now"
+    },
+    "under-development": {
+        "title": "Feature Under Development",
+        "description": "We're working hard to bring this feature to you! Please check back later.",
+        "back-to-home": "Back to Home"
+    },
+    "contact-us": {
+        "title": "Contact Us",
+        "description": "Please get in touch with us, we'd like to hear from you and will reach to you soon as possible!",
+        "fullnameLabel": "Fullname",
+        "emailLabel": "Email",
+        "phoneLabel": "Phone",
+        "serviceTypeLabel": "Service Type",
+        "messageLabel": "Message",
+        "sendMessage": "Send Message",
+        "address": {
+            "title": "Address",
+            "content": "Starry Sky Co.,Ltd Ho Chi Minh City, Vietnam"
+        },
+        "hotline": {
+            "title": "Hotline",
+            "phone": "+84775259919",
+            "hotline": "+84775698919"
+        },
+        "email": {
+            "title": "Email",
+            "content": "bautroisao.tarrysky@gmail.com"
+        },
+        "errors": {
+            "fullnameRequired": "Fullname is required",
+            "invalidEmail": "Invalid email address",
+            "phoneRequired": "Phone number is required",
+            "serviceTypeRequired": "Service type is required",
+            "messageRequired": "Message is required"
+        }
     },
     "endline": ""
 }
