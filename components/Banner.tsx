@@ -7,7 +7,8 @@ import { Lobster } from 'next/font/google';
 import { cn } from '@/lib/utils';
 
 const lobster = Lobster({
-  weight: '400'
+  weight: '400',
+  subsets: ['latin', 'latin-ext', 'vietnamese']
 });
 
 export default function Banner() {

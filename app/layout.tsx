@@ -29,7 +29,7 @@ const times = localFont({
     {
       path: '../public/fonts/times_bi.ttf',
       weight: '700',
-      style: 'italic'
+      style: 'italic',
     }
   ]
 });
