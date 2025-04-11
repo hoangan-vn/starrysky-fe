@@ -86,7 +86,7 @@
                 "tag": "+(84) 775 698 919"
             },
             "zalo": {
-                "ref": "0775698919",
+                "ref": "0775259919",
                 "tag": "+(84) 775 259 919"
             },
             "mail": "bautroisao.tarrysky@gmail.com"
@@ -108,8 +108,8 @@
     },
     "services": {
         "title": "Fast Track Service",
-        "description": "We offer a wide range of airport services, all-inclusive Fast Track, eSIM, and Car Transfer (Pickup & Dropoff), ensuring a seamless start to your journey in Vietnam. Our expert staff will ensure a smooth transition to your dream destination by handling complicated procedures, delivering effective communication, and giving settlement advice with precision.",
-        "quote": "“Let us be your trustworthy airport buddy”, and you will never regret it."
+        "description": "Our Fast Track Service ensures a seamless airport experience by meeting guests at the arrival gate or a designated pick-up point at the international terminal, assisting with visa processing if applicable, guiding them through immigration and customs procedures, helping retrieve their luggage, and supporting with security screening procedures. Finally, we escort guests and their luggage to their vehicle or to the boarding lounge for a smooth transition.",
+        "quote": "\"Let us be your trustworthy airport buddy\", and you will never regret it."
     },
     "nav": {
         "services": "Services",
@@ -120,6 +120,8 @@
     },
     "our-service": {
         "international": {
+            "title": "International",
+            "description": "",
             "regularArrival": {
                 "title": "Regular Arrival Service",
                 "description": "<li>Pick up guests at the arrival gate or designated pick-up point at the international terminal</li><li>Assist guests with visa procedures (if applicable)</li><li>Assist guests with immigration procedures</li><li>Assist guests with customs procedures</li><li>Assist guests with luggage retrieval</li><li>Escort guests with their luggage to the vehicle</li>"
@@ -142,6 +144,8 @@
             }
         },
         "domestic": {
+            "title": "Domestic",
+            "description": "",
             "regularArrival": {
                 "title": "Regular Arrival Service",
                 "description": "<li>Pick up guests at the arrival gate or designated pick-up point at the domestic terminal</li><li>Assist guests with luggage retrieval</li><li>Escort guests with their luggage to the vehicle</li>"
@@ -172,16 +176,16 @@
         "sendMessage": "Send Message",
         "address": {
             "title": "Address",
-            "content": "No. 40 - 42, Thien Phuoc St, Ward 9, Tan Binh Dist, HCMC, Vietnam"
+            "content": "Starry Sky Co.,Ltd Ho Chi Minh City, Vietnam"
         },
         "hotline": {
             "title": "Hotline",
-            "phone": "+842868629698",
-            "hotline": "+84357522522"
+            "phone": "+84775259919",
+            "hotline": "+84775698919"
         },
         "email": {
             "title": "Email",
-            "content": "info@vietnam-airports.com"
+            "content": "bautroisao.tarrysky@gmail.com"
         },
         "errors": {
             "fullnameRequired": "Fullname is required",

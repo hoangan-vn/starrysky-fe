@@ -1,12 +1,12 @@
-import { useNavLinks } from '@/lib/router/router';
 import InternationalServices from './InternationalServices';
+import DomesticServices from './DomesticServices';
 
 const OurServices = () => {
-  const navLinks = useNavLinks();
-  
+
   return (
-    <section id={navLinks.at(0)?.id} className='py-12 px-4 max-w-6xl mx-auto'>
+    <section className='py-12 px-4 max-w-6xl mx-auto'>
       <InternationalServices />
+      <DomesticServices />
     </section>
   );
 };

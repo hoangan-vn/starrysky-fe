@@ -4,7 +4,7 @@ import Banner from '@/components/Banner';
 import SignUpPortal from '@/components/portal/SignUpPortal';
 import Benefits from '@/components/Benefits';
 import { cn } from '@/lib/utils';
-import Services from '@/components/services/Services';
+import FastTrackServices from '@/components/services/FastTrackServices';
 import OurServices from '@/components/services/OurServices';
 import ContactForm from '@/components/ContactForm';
 
@@ -22,7 +22,7 @@ export default function Home() {
         >
           <Benefits />
         </div>
-        <Services />
+        <FastTrackServices />
         <OurServices />
         <ContactForm />
       </div>

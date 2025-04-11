@@ -1,12 +1,12 @@
 {
     "metadata": {
-        "title": "Starry Sky - Bầu Trời Sao",
+        "title": "Bầu Trời Sao",
         "description": "© 2025 Công ty Bầu Trời Sao. Phát triển bởi Hoàng An"
     },
     "home": {
         "home": "Trang chủ",
-        "title": "Bầu Trời Đầy Sao",
-        "description": "© 2025 Công ty Bầu Trời Đầy Sao. Phát triển bởi Hoàng An"
+        "title": "Bầu Trời Sao",
+        "description": "© 2025 Công ty Bầu Trời Sao. Phát triển bởi Hoàng An"
     },
     "LocaleSwitcher": {
         "vi": "Tiếng Việt",
@@ -70,7 +70,7 @@
                 "tag": "0 775 698 919"
             },
             "zalo": {
-                "ref": "0775698919",
+                "ref": "0775259919",
                 "tag": "0 775 259 919"
             },
             "mail": "bautroisao.tarrysky@gmail.com"
@@ -82,7 +82,7 @@
         "apple-shortcut": "⌘ K"
     },
     "banner": {
-        "title": "FAST TRACK",
+        "title": "DỊCH VỤ FAST TRACK",
         "slogan": "Giải pháp tiết kiệm thời gian cho chuyến bay của bạn!"
     },
     "benefits": {
@@ -92,8 +92,8 @@
     },
     "services": {
         "title": "Dịch vụ Fast Track",
-        "description": "Chúng tôi cung cấp nhiều loại dịch vụ sân bay, bao gồm Fast Track toàn diện, eSIM và Dịch vụ Đưa Đón Bằng Xe (Đón & Trả), đảm bảo hành trình của bạn tại Việt Nam bắt đầu một cách suôn sẻ. Đội ngũ chuyên gia của chúng tôi sẽ đảm bảo quá trình chuyển tiếp đến điểm đến mơ ước của bạn diễn ra mượt mà bằng cách xử lý các thủ tục phức tạp, giao tiếp hiệu quả và đưa ra lời khuyên giải quyết chính xác.",
-        "quote": "“Hãy để chúng tôi trở thành người bạn đồng hành đáng tin cậy của bạn tại sân bay”, và bạn sẽ không bao giờ hối tiếc."
+        "description": "Dịch vụ Fast Track của chúng tôi đảm bảo một trải nghiệm sân bay suôn sẻ bằng cách đón khách tại cổng đến hoặc điểm đón được chỉ định tại nhà ga quốc tế, hỗ trợ khách làm thủ tục visa nếu cần, hướng dẫn khách qua các thủ tục nhập cảnh và hải quan, giúp lấy hành lý, đồng thời hỗ trợ khách làm thủ tục kiểm tra an ninh. Cuối cùng, chúng tôi đưa khách cùng hành lý của họ đến xe hoặc đến phòng chờ lên máy bay để đảm bảo quá trình chuyển tiếp diễn ra mượt mà.",
+        "quote": "\"Hãy để chúng tôi trở thành người bạn đồng hành đáng tin cậy của bạn tại sân bay\", và bạn sẽ không bao giờ hối tiếc."
     },
     "nav": {
         "services": "Dịch vụ",
@@ -104,46 +104,50 @@
     },
     "our-service": {
         "international": {
+            "title": "Quốc tế",
+            "description": "",
             "regularArrival": {
-                "title": "Regular Arrival Service",
-                "description": "<li>Pick up guests at the arrival gate or designated pick-up point at the international terminal</li><li>Assist guests with visa procedures (if applicable)</li><li>Assist guests with immigration procedures</li><li>Assist guests with customs procedures</li><li>Assist guests with luggage retrieval</li><li>Escort guests with their luggage to the vehicle</li>"
+                "title": "Dịch vụ Đón Tiếp Quốc Tế Thông Thường",
+                "description": "<li>Đón khách tại cổng đến hoặc điểm đón được chỉ định tại nhà ga quốc tế</li><li>Hỗ trợ khách làm thủ tục visa (nếu có)</li><li>Hỗ trợ khách làm thủ tục nhập cảnh</li><li>Hỗ trợ khách làm thủ tục hải quan</li><li>Hỗ trợ khách lấy hành lý</li><li>Đưa khách cùng hành lý đến xe</li>"
             },
             "vipBArrival": {
-                "title": "VIP B Arrival",
-                "description": "<li>Staff picks up guests at the 'Ông Lớn' bridge, in the area heading straight to CACK without needing to go through the luggage claim area, and escorts guests outside the terminal to their vehicle</li><li>(The staff will take the guest's passport for procedures when meeting the guest and return it to the guest once they are in the vehicle)</li>"
+                "title": "Dịch vụ Đón Tiếp VIP B",
+                "description": "<li>Nhân viên đón khách tại cầu 'Ông Lớn', khu vực đi thẳng đến CACK mà không cần qua khu vực lấy hành lý, và đưa khách ra ngoài nhà ga đến xe của họ</li><li>(Nhân viên sẽ lấy hộ chiếu của khách để làm thủ tục khi gặp khách và trả lại hộ chiếu cho khách khi họ đã lên xe)</li>"
             },
             "regularDeparture": {
-                "title": "Regular Departure Service",
-                "description": "<li>Pick up guests at the international passenger departure hall</li><li>Assist guests with check-in procedures</li><li>Assist guests with departure procedures</li><li>Assist guests with customs procedures</li><li>Assist guests with security screening procedures</li><li>Escort guests to the boarding gate</li>"
+                "title": "Dịch vụ Khởi Hành Quốc Tế Thông Thường",
+                "description": "<li>Đón khách tại sảnh khởi hành hành khách quốc tế</li><li>Hỗ trợ khách làm thủ tục check-in</li><li>Hỗ trợ khách làm thủ tục xuất cảnh</li><li>Hỗ trợ khách làm thủ tục hải quan</li><li>Hỗ trợ khách làm thủ tục kiểm tra an ninh</li><li>Đưa khách đến cổng lên máy bay</li>"
             },
             "regularVipArrival": {
-                "title": "Regular VIP Arrival",
-                "description": "<li>Pick up guests at the immigration area, assist with visa procedures if needed - Guide guests to the luggage claim area, guests retrieve their luggage, then proceed outside</li>"
+                "title": "Dịch vụ Đón Tiếp VIP Quốc Tế Thông Thường",
+                "description": "<li>Đón khách tại khu vực nhập cảnh, hỗ trợ làm thủ tục visa nếu cần - Hướng dẫn khách đến khu vực lấy hành lý, khách tự lấy hành lý, sau đó đi ra ngoài</li>"
             },
             "regularVipDeparture": {
-                "title": "Regular VIP Departure",
-                "description": "<li>Escort guests for departure procedures (Guests check in themselves, staff escorts them during departure + provides a small gift)</li>"
+                "title": "Dịch vụ Khởi Hành VIP Quốc Tế Thông Thường",
+                "description": "<li>Đưa khách làm thủ tục xuất cảnh (Khách tự làm thủ tục check-in, nhân viên đưa khách trong quá trình xuất cảnh + tặng một món quà nhỏ)</li>"
             }
         },
         "domestic": {
+            "title": "Quốc nội",
+            "description": "",
             "regularArrival": {
-                "title": "Regular Arrival Service",
-                "description": "<li>Pick up guests at the arrival gate or designated pick-up point at the domestic terminal</li><li>Assist guests with luggage retrieval</li><li>Escort guests with their luggage to the vehicle</li>"
+                "title": "Dịch vụ Đón Tiếp Nội Địa Thông Thường",
+                "description": "<li>Đón khách tại cổng đến hoặc điểm đón được chỉ định tại nhà ga nội địa</li><li>Hỗ trợ khách lấy hành lý</li><li>Đưa khách cùng hành lý đến xe</li>"
             },
             "regularDeparture": {
-                "title": "Regular Departure Service",
-                "description": "<li>Pick up guests at the domestic passenger departure hall</li><li>Assist guests with check-in procedures</li><li>Assist guests with security procedures</li><li>Escort guests to the aircraft</li>"
+                "title": "Dịch vụ Khởi Hành Nội Địa Thông Thường",
+                "description": "<li>Đón khách tại sảnh khởi hành hành khách nội địa</li><li>Hỗ trợ khách làm thủ tục check-in</li><li>Hỗ trợ khách làm thủ tục an ninh</li><li>Đưa khách đến máy bay</li>"
             }
         },
         "fastTrack": {
-            "title": "FAST TRACK AIRPORT SERVICE"
+            "title": "DỊCH VỤ FAST TRACK SÂN BAY"
         },
-        "apply-now": "Apply now"
+        "apply-now": "Đăng ký ngay"
     },
     "under-development": {
-        "title": "Feature Under Development",
-        "description": "We're working hard to bring this feature to you! Please check back later.",
-        "back-to-home": "Back to Home"
+        "title": "Tính Năng Đang Được Phát Triển",
+        "description": "Chúng tôi đang nỗ lực để mang tính năng này đến với bạn! Vui lòng quay lại sau.",
+        "back-to-home": "Quay lại Trang Chủ"
     },
     "contact-us": {
         "title": "Liên Hệ Với Chúng Tôi",
@@ -156,16 +160,16 @@
         "sendMessage": "Gửi Tin Nhắn",
         "address": {
             "title": "Địa Chỉ",
-            "content": "Số 40 - 42, Đường Thiên Phước, Phường 9, Quận Tân Bình, TP.HCM, Việt Nam"
+            "content": "Công ty THHH Starry Sky, TP.Hồ Chí Minh, Việt Nam"
         },
         "hotline": {
             "title": "Đường Dây Nóng",
-            "phone": "+842868629698",
-            "hotline": "+84357522522"
+            "phone": "+84775259919",
+            "hotline": "+84775698919"
         },
         "email": {
             "title": "Email",
-            "content": "info@vietnam-airports.com"
+            "content": "bautroisao.tarrysky@gmail.com"
         },
         "errors": {
             "fullnameRequired": "Họ và tên là bắt buộc",

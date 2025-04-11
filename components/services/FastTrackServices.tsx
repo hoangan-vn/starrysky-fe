@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-export default function Services() {
+export default function FastTrackServices() {
   const t = useTranslations('services');
 
   return (

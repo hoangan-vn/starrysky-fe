@@ -1,45 +1,30 @@
 import Link from 'next/link';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Github, Twitter, MessageCircle } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 import { HomeLink } from '@/lib/router/coordinator';
 import { AppIcon } from './icons';
+import { useTranslations } from 'next-intl';
 export default function Footer() {
+  const t = useTranslations('nav');
   const footerLinks = [
     {
       title: 'Resources',
       links: [
-        { name: 'Docs', href: '/docs' },
-        { name: 'Support', href: '/support' },
-        { name: 'Learn', href: '/learn' },
-        { name: 'Showcase', href: '/showcase' },
-        { name: 'Blog', href: '/blog' },
-        { name: 'Analytics', href: '/analytics' },
-        { name: 'Next.js Conf', href: '/nextjs-conf' },
-        { name: 'Previews', href: '/previews' }
+        { name: t('services'), href: '/services' },
+        { name: t('pricing'), href: '/pricing' },
+        { name: t('blogs'), href: '/blogs' },
+        { name: t('about-us'), href: '/about-us' },
+        { name: t('contact'), href: '' }
       ]
     },
     {
       title: 'More',
-      links: [
-        { name: 'Next.js Commerce', href: '/nextjs-commerce' },
-        { name: 'Contact Sales', href: '/contact-sales' },
-        { name: 'Community', href: '/community' },
-        { name: 'GitHub', href: '/github' },
-        { name: 'Releases', href: '/releases' },
-        { name: 'Telemetry', href: '/telemetry' },
-        { name: 'Governance', href: '/governance' }
-      ]
+      links: [{ name: 'Tan Son Nhat Airport', href: '/nextjs-commerce' }]
     },
     {
-      title: 'About Vercel',
-      links: [
-        { name: 'Next.js + Vercel', href: '/nextjs-vercel' },
-        { name: 'Open Source Software', href: '/open-source' },
-        { name: 'GitHub', href: 'https://github.com/vercel' },
-        { name: 'Bluesky', href: 'https://bsky.app/profile/vercel.com' },
-        { name: 'X', href: 'https://x.com/vercel' }
-      ]
+      title: 'About Us',
+      links: [{ name: 'Starry Sky', href: '/about-us' }]
     },
     {
       title: 'Legal',
@@ -96,14 +81,8 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className='mt-10 flex justify-between items-center border-t pt-6'>
-          <p className='text-sm text-gray-600'>© 2025 Starry Sky, Inc. Deveoped by Hoang An</p>
+          <p className='text-sm text-gray-600'>© 2025 Starry Sky Co.,Ltd | Deveoped by Hoang An</p>
           <div className='flex space-x-4'>
-            <Link href='https://github.com/vercel' className='text-gray-600 hover:text-gray-900'>
-              <Github className='w-5 h-5' />
-            </Link>
-            <Link href='https://x.com/vercel' className='text-gray-600 hover:text-gray-900'>
-              <Twitter className='w-5 h-5' />
-            </Link>
             <Link href='https://bsky.app/profile/vercel.com' className='text-gray-600 hover:text-gray-900'>
               <MessageCircle className='w-5 h-5' />
             </Link>

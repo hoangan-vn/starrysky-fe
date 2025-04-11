@@ -1,9 +1,9 @@
-import UnderDevelopment from '@/components/pages/Underdevelopment';
+import Pricing from '@/components/pricing/Pricing';
 
 export default function page() {
   return (
     <div>
-      <UnderDevelopment />
+      <Pricing />
     </div>
   );
 }

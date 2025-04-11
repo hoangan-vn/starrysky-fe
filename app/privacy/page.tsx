@@ -1,3 +1,9 @@
+import Pricing from '@/components/pricing/Pricing';
+
 export default function page() {
-  return <div></div>;
+  return (
+    <div>
+      <Pricing />
+    </div>
+  );
 }

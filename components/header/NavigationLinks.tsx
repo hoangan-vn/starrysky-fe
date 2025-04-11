@@ -42,7 +42,7 @@ export default function NavigationLinks({ className }: NavigationLinksProps) {
 
   const handleScrollToSection = (link: NavLink, e: React.MouseEvent<HTMLAnchorElement>): void => {
     e.preventDefault();
-    const targetId = link.name.toLowerCase().replace(/\s+/g, '-');
+    const targetId = link.id.toLowerCase().replace(/\s+/g, '-');
 
     if (pathname !== routerName.home) {
       // Lưu target ID và điều hướng về trang chủ
