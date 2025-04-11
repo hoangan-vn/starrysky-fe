@@ -14,10 +14,10 @@ export const useNavLinks = (): NavLink[] => {
   const t = useTranslations('nav');
 
   return [
-    { name: t('services'), href: '/services' },
-    { name: t('pricing'), href: '/pricing' },
-    { name: t('blogs'), href: '/blogs' },
-    { name: t('about-us'), href: '/about-us' },
-    { name: t('contact-us'), href: '' }
+    { id: 'services', name: t('services'), href: '/services' },
+    { id: 'pricing', name: t('pricing'), href: '/pricing' },
+    { id: 'blogs', name: t('blogs'), href: '/blogs' },
+    { id: 'about-us', name: t('about-us'), href: '/about-us' },
+    { id: 'contact', name: t('contact'), href: '' }
   ];
 };

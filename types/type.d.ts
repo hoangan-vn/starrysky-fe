@@ -20,6 +20,7 @@ type IconProps = {
 };
 
 type NavLink = {
+  id: string;
   name: string;
   href: string;
 };

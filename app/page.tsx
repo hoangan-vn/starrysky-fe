@@ -4,7 +4,9 @@ import Banner from '@/components/Banner';
 import SignUpPortal from '@/components/portal/SignUpPortal';
 import Benefits from '@/components/Benefits';
 import { cn } from '@/lib/utils';
-import Services from '@/components/Services';
+import Services from '@/components/services/Services';
+import OurServices from '@/components/services/OurServices';
+import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
           <Benefits />
         </div>
         <Services />
+        <OurServices />
+        <ContactForm />
       </div>
       <SignUpPortal />
     </main>

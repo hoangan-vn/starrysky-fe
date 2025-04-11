@@ -100,7 +100,80 @@
         "pricing": "Bảng giá",
         "blogs": "Blog",
         "about-us": "Về chúng tôi",
-        "contact-us": "Liên hệ"
+        "contact": "Liên hệ"
+    },
+    "our-service": {
+        "international": {
+            "regularArrival": {
+                "title": "Regular Arrival Service",
+                "description": "<li>Pick up guests at the arrival gate or designated pick-up point at the international terminal</li><li>Assist guests with visa procedures (if applicable)</li><li>Assist guests with immigration procedures</li><li>Assist guests with customs procedures</li><li>Assist guests with luggage retrieval</li><li>Escort guests with their luggage to the vehicle</li>"
+            },
+            "vipBArrival": {
+                "title": "VIP B Arrival",
+                "description": "<li>Staff picks up guests at the 'Ông Lớn' bridge, in the area heading straight to CACK without needing to go through the luggage claim area, and escorts guests outside the terminal to their vehicle</li><li>(The staff will take the guest's passport for procedures when meeting the guest and return it to the guest once they are in the vehicle)</li>"
+            },
+            "regularDeparture": {
+                "title": "Regular Departure Service",
+                "description": "<li>Pick up guests at the international passenger departure hall</li><li>Assist guests with check-in procedures</li><li>Assist guests with departure procedures</li><li>Assist guests with customs procedures</li><li>Assist guests with security screening procedures</li><li>Escort guests to the boarding gate</li>"
+            },
+            "regularVipArrival": {
+                "title": "Regular VIP Arrival",
+                "description": "<li>Pick up guests at the immigration area, assist with visa procedures if needed - Guide guests to the luggage claim area, guests retrieve their luggage, then proceed outside</li>"
+            },
+            "regularVipDeparture": {
+                "title": "Regular VIP Departure",
+                "description": "<li>Escort guests for departure procedures (Guests check in themselves, staff escorts them during departure + provides a small gift)</li>"
+            }
+        },
+        "domestic": {
+            "regularArrival": {
+                "title": "Regular Arrival Service",
+                "description": "<li>Pick up guests at the arrival gate or designated pick-up point at the domestic terminal</li><li>Assist guests with luggage retrieval</li><li>Escort guests with their luggage to the vehicle</li>"
+            },
+            "regularDeparture": {
+                "title": "Regular Departure Service",
+                "description": "<li>Pick up guests at the domestic passenger departure hall</li><li>Assist guests with check-in procedures</li><li>Assist guests with security procedures</li><li>Escort guests to the aircraft</li>"
+            }
+        },
+        "fastTrack": {
+            "title": "FAST TRACK AIRPORT SERVICE"
+        },
+        "apply-now": "Apply now"
+    },
+    "under-development": {
+        "title": "Feature Under Development",
+        "description": "We're working hard to bring this feature to you! Please check back later.",
+        "back-to-home": "Back to Home"
+    },
+    "contact-us": {
+        "title": "Liên Hệ Với Chúng Tôi",
+        "description": "Vui lòng liên hệ với chúng tôi, chúng tôi rất muốn nghe ý kiến từ bạn và sẽ phản hồi sớm nhất có thể!",
+        "fullnameLabel": "Họ và Tên",
+        "emailLabel": "Email",
+        "phoneLabel": "Số Điện Thoại",
+        "serviceTypeLabel": "Loại Dịch Vụ",
+        "messageLabel": "Tin Nhắn",
+        "sendMessage": "Gửi Tin Nhắn",
+        "address": {
+            "title": "Địa Chỉ",
+            "content": "Số 40 - 42, Đường Thiên Phước, Phường 9, Quận Tân Bình, TP.HCM, Việt Nam"
+        },
+        "hotline": {
+            "title": "Đường Dây Nóng",
+            "phone": "+842868629698",
+            "hotline": "+84357522522"
+        },
+        "email": {
+            "title": "Email",
+            "content": "info@vietnam-airports.com"
+        },
+        "errors": {
+            "fullnameRequired": "Họ và tên là bắt buộc",
+            "invalidEmail": "Địa chỉ email không hợp lệ",
+            "phoneRequired": "Số điện thoại là bắt buộc",
+            "serviceTypeRequired": "Loại dịch vụ là bắt buộc",
+            "messageRequired": "Tin nhắn là bắt buộc"
+        }
     },
     "endline": ""
 }

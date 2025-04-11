@@ -7,7 +7,7 @@ import StoreProvider from '@/app/StoreProvider';
 import Header from '@/components/header/Header';
 import Footer from '@/components/Footer';
 import { Toaster } from '@/components/ui/sonner';
-import ChatButton from '@/components/chat/ChatButton';
+// import ChatButton from '@/components/chat/ChatButton';
 
 const times = localFont({
   src: [
@@ -59,7 +59,8 @@ export default async function RootLayout({
             {children}
             <Footer />
             <Toaster />
-            <ChatButton />
+            {/* Thêm vào sau */}
+            {/* <ChatButton /> */}
           </NextIntlClientProvider>
         </StoreProvider>
       </body>
