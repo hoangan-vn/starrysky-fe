@@ -1,8 +1,8 @@
 import NavLink from '@/lib/router/NavLink';
-import { navLinks } from '@/lib/router/router';
 import RenderIf from '../widgets/RenderIf';
 import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { routerName, useNavLinks } from '@/lib/router/router';
 
 type NavigationLinksProps = {
   className?: string;
@@ -11,13 +11,14 @@ type NavigationLinksProps = {
 export default function NavigationLinks({ className }: NavigationLinksProps) {
   const router = useRouter();
   const pathname = usePathname();
+  const navLinks = useNavLinks();
 
   const handleScrollToSection = (link: NavLink, e: React.MouseEvent<HTMLAnchorElement>): void => {
     e.preventDefault();
 
     const targetId = link.name.toLowerCase().replace(/\s+/g, '-');
-    if (pathname !== '/') {
-      router.push(`/`, { scroll: false });
+    if (pathname !== routerName.home) {
+      router.push(routerName.home, { scroll: false });
     }
 
     const targetElement = document.getElementById(targetId);

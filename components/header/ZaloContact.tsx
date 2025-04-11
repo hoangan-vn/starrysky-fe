@@ -26,7 +26,7 @@ export default function ZaloContact() {
   };
   return (
     <div className='flex items-center space-x-2'>
-      <Image src='/zalo.png' alt='Zalo' width={20} height={14} />
+      <Image src='/images/zalo.png' alt='Zalo' width={20} height={14} />
       <a
         href={`zalo://chat?phone=${t('ref')}`}
         onClick={(e) => handleZaloClick(e)}

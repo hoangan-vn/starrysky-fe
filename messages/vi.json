@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "title": "Bầu Trời Đầy Sao",
-        "description": "© 2025 Công ty Bầu Trời Đầy Sao. Phát triển bởi Hoàng An"
+        "title": "Starry Sky - Bầu Trời Sao",
+        "description": "© 2025 Công ty Bầu Trời Sao. Phát triển bởi Hoàng An"
     },
     "home": {
         "home": "Trang chủ",
@@ -82,13 +82,25 @@
         "apple-shortcut": "⌘ K"
     },
     "banner": {
-        "title": "FASTRACK",
+        "title": "FAST TRACK",
         "slogan": "Giải pháp tiết kiệm thời gian cho chuyến bay của bạn!"
     },
+    "benefits": {
+        "convenience": "Tiện lợi",
+        "quick-check-in": "Làm thủ tục nhanh",
+        "time-saving": "Tiết kiệm thời gian"
+    },
     "services": {
-        "title": "Fast Track Service",
-        "description": "We offer a wide range of airport services, all-inclusive Fast Track, eSIM, and Car Transfer (Pickup & Dropoff), ensuring a seamless start to your journey in Vietnam. Our expert staff will ensure a smooth transition to your dream destination by handling complicated procedures, delivering effective communication, and giving settlement advice with precision.",
-        "quote": "“Let us be your trustworthy airport buddy”, and you will never regret it."
+        "title": "Dịch vụ Fast Track",
+        "description": "Chúng tôi cung cấp nhiều loại dịch vụ sân bay, bao gồm Fast Track toàn diện, eSIM và Dịch vụ Đưa Đón Bằng Xe (Đón & Trả), đảm bảo hành trình của bạn tại Việt Nam bắt đầu một cách suôn sẻ. Đội ngũ chuyên gia của chúng tôi sẽ đảm bảo quá trình chuyển tiếp đến điểm đến mơ ước của bạn diễn ra mượt mà bằng cách xử lý các thủ tục phức tạp, giao tiếp hiệu quả và đưa ra lời khuyên giải quyết chính xác.",
+        "quote": "“Hãy để chúng tôi trở thành người bạn đồng hành đáng tin cậy của bạn tại sân bay”, và bạn sẽ không bao giờ hối tiếc."
+    },
+    "nav": {
+        "services": "Dịch vụ",
+        "pricing": "Bảng giá",
+        "blogs": "Blog",
+        "about-us": "Về chúng tôi",
+        "contact-us": "Liên hệ"
     },
     "endline": ""
 }

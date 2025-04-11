@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
-import { navLinks } from '@/lib/router/router';
 import NavLink from '@/lib/router/NavLink';
+import { useNavLinks } from '@/lib/router/router';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const navLinks = useNavLinks();
+  
   return (
     <nav>
       <div className='container mx-auto flex justify-between items-center shadow-md rounded-lg'>

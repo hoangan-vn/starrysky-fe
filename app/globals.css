@@ -41,6 +41,24 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  /* custom */
+  --color-matisse-50: #f0f9ff;
+  --color-matisse-100: #e0f1fe;
+  --color-matisse-200: #b9e4fe;
+  --color-matisse-300: #7bd0fe;
+  --color-matisse-400: #36b8fa;
+  --color-matisse-500: #0b9fec;
+  --color-matisse-600: #007fca;
+  --color-matisse-700: #0169aa;
+  --color-matisse-800: #055587;
+  --color-matisse-900: #0b476f;
+  --color-matisse-950: #072d4a;
+  --color-app-text: var(--color-matisse-950);
+  --color-active: var(--color-matisse-400);
+  --color-hover: var(--color-matisse-300);
+  --color-default: var(--color-matisse-200);
+  --color-disabled: var(--color-matisse-100);
+  --color-disabled-text: var(--color-matisse-400);
 }
 
 :root {

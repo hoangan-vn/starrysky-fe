@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
 import { getLocale, getTranslations } from 'next-intl/server';
 import './globals.css';
 import { NextIntlClientProvider } from 'next-intl';
@@ -9,14 +9,29 @@ import Footer from '@/components/Footer';
 import { Toaster } from '@/components/ui/sonner';
 import ChatButton from '@/components/chat/ChatButton';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin']
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin']
+const times = localFont({
+  src: [
+    {
+      path: '../public/fonts/times.ttf',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: '../public/fonts/times_bd.ttf',
+      weight: '700',
+      style: 'normal'
+    },
+    {
+      path: '../public/fonts/times_i.ttf',
+      weight: '400',
+      style: 'italic'
+    },
+    {
+      path: '../public/fonts/times_bi.ttf',
+      weight: '700',
+      style: 'italic'
+    }
+  ]
 });
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
@@ -37,7 +52,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${times.className} antialiased`}>
         <StoreProvider>
           <NextIntlClientProvider>
             <Header />
