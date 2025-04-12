@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { useAppSelector } from '@/hooks/hooks';
 import { useResponsive } from '@/hooks/useResponsive';
-import RenderIf from './widgets/RenderIf';
+import RenderIf from '@/components/widgets/RenderIf';
 import { Lobster } from 'next/font/google';
 import { cn } from '@/lib/utils';
 

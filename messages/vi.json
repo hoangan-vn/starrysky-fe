@@ -1,12 +1,12 @@
 {
     "metadata": {
-        "title": "Bầu Trời Sao",
-        "description": "© 2025 Công ty Bầu Trời Sao. Phát triển bởi Hoàng An"
+        "title": "Starry Sky - Dịch Vụ Fast Track Sân Bay Tân Sơn Nhất",
+        "description": "Khám phá dịch vụ Fast Track chuyên nghiệp tại Sân bay Tân Sơn Nhất với Starry Sky. Tiết kiệm thời gian, trải nghiệm hành trình suôn sẻ!"
     },
     "home": {
         "home": "Trang chủ",
-        "title": "Bầu Trời Sao",
-        "description": "© 2025 Công ty Bầu Trời Sao. Phát triển bởi Hoàng An"
+        "title": "Starry SKy - Bầu Trời Sao - Fast Track",
+        "description": "Chuyên cung cấp dịch vụ về Fast Track tại Sân bay Tân Sơn Nhất."
     },
     "LocaleSwitcher": {
         "vi": "Tiếng Việt",
@@ -100,7 +100,8 @@
         "pricing": "Bảng giá",
         "blogs": "Blog",
         "about-us": "Về chúng tôi",
-        "contact": "Liên hệ"
+        "contact": "Liên hệ",
+        "tsn-airport": "Sân bay Tan Son Nhat"
     },
     "our-service": {
         "international": {
@@ -164,8 +165,8 @@
         },
         "hotline": {
             "title": "Đường Dây Nóng",
-            "phone": "+84775259919",
-            "hotline": "+84775698919"
+            "phone": "0775259919",
+            "hotline": "0775698919"
         },
         "email": {
             "title": "Email",
@@ -178,6 +179,25 @@
             "serviceTypeRequired": "Loại dịch vụ là bắt buộc",
             "messageRequired": "Tin nhắn là bắt buộc"
         }
+    },
+    "footer": {
+        "resources": "Tài nguyên",
+        "more": "Thêm",
+        "about-us": "Về chúng tôi",
+        "starry-sky": "Starry Sky",
+        "legal": "Về pháp luật",
+        "privacy-policy": "Chính sách bảo mật",
+        "cookie-preferences": "Tùy chọn Cookie",
+        "newsletter-subscription": {
+            "title": "Đăng ký nhận bản tin của chúng tôi",
+            "description": "Cập nhật thông tin về dịch vụ mới, giảm giá hoặc phiếu giảm giá.",
+            "action": "Đăng ký"
+        }
+    },
+    "sonner": {
+        "action": "Đang phát triển",
+        "description": "Chức năng này đang trong quá trình phát triển. Vui lòng liên hệ đường dây nóng để biết thêm về dịch vụ",
+        "undo": "Hoàn tác"
     },
     "endline": ""
 }

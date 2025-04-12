@@ -1,6 +1,5 @@
-import { BreadcrumbWithHistory } from "@/components/BreadcrumbHistory";
-import { routerName } from "@/lib/router/router";
+import UnderDevelopment from '@/components/widgets/UnderDevelopment';
 
 export default function page() {
-    return <BreadcrumbWithHistory routesMap={routerName} maxVisibleItems={4} />;
-};
+  return <UnderDevelopment />;
+}

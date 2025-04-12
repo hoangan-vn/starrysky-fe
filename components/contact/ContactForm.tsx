@@ -9,16 +9,18 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Mail, MessageCircle, MessageSquare } from 'lucide-react';
-import RequirementField from './widgets/RequirementField';
+import RequirementField from '../widgets/RequirementField';
 import { useTranslations } from 'next-intl';
 import { useNavLinks } from '@/lib/router/router';
+import { showSonnerUnderDevelopment } from '@/lib/utils';
+import { AppIcon } from '../icons';
+import Capcha from '../capcha/Capcha';
 
-// Định nghĩa schema cho form với thông báo lỗi đa ngôn ngữ
 const ContactUs = () => {
   const t = useTranslations('contact-us');
   const navLinks = useNavLinks();
+  const t_sonner = useTranslations('sonner');
 
-  // Định nghĩa schema với thông báo lỗi từ t
   const formSchema = z.object({
     fullname: z.string().min(1, t('errors.fullnameRequired')),
     email: z.string().email(t('errors.invalidEmail')),
@@ -49,6 +51,12 @@ const ContactUs = () => {
   const onSubmit = (data: FormData) => {
     console.log('Form submitted:', data);
     // Add your form submission logic here (e.g., API call)
+    showSonnerUnderDevelopment({
+      action: t_sonner('action'),
+      description: t_sonner('description'),
+      label: t_sonner('undo'),
+      icon: <AppIcon width={25} height={25} />
+    });
   };
 
   return (
@@ -115,7 +123,7 @@ const ContactUs = () => {
               <Textarea id='message' {...register('message')} className='mt-1' rows={4} />
               {errors.message && <p className='text-red-500 text-sm mt-1'>{errors.message.message}</p>}
             </div>
-
+            <Capcha />
             {/* Submit Button */}
             <div>
               <Button type='submit' className='bg-orange-500 hover:bg-orange-600 w-full'>
