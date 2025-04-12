@@ -1,14 +1,21 @@
+'use client';
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ConstructionIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { HomeLink } from '@/lib/router/coordinator';
 import { cn } from '@/lib/utils';
+import { useAppSelector } from '@/hooks/hooks';
 
 export default function UnderDevelopment() {
   const t = useTranslations('under-development');
+  const headerHeight = useAppSelector((state) => state.headerHeight.headerHeight);
 
   return (
-    <div className='min-h-screen flex items-center justify-center bg-gray-100'>
+    <div
+      className='relative w-full h-full overflow-hidden flex items-center justify-center bg-gray-100'
+      style={{ height: `calc(100vh - ${headerHeight}px)` }}
+    >
       <Card className='max-w-md w-full mx-4 shadow-lg'>
         <CardHeader className='text-center'>
           <div className='flex justify-center mb-4'>

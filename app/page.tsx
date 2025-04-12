@@ -1,12 +1,12 @@
 'use client';
 
-import Banner from '@/components/Banner';
 import SignUpPortal from '@/components/portal/SignUpPortal';
-import Benefits from '@/components/Benefits';
+import Benefits from '@/components/benefits/Benefits';
 import { cn } from '@/lib/utils';
 import FastTrackServices from '@/components/services/FastTrackServices';
 import OurServices from '@/components/services/OurServices';
-import ContactForm from '@/components/ContactForm';
+import ContactForm from '@/components/contact/ContactForm';
+import Banner from '@/components/banner/Banner';
 
 export default function Home() {
   return (

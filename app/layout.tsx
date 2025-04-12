@@ -5,7 +5,7 @@ import './globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import StoreProvider from '@/app/StoreProvider';
 import Header from '@/components/header/Header';
-import Footer from '@/components/Footer';
+import Footer from '@/components/footer/Footer';
 import { Toaster } from '@/components/ui/sonner';
 // import ChatButton from '@/components/chat/ChatButton';
 
@@ -29,7 +29,7 @@ const times = localFont({
     {
       path: '../public/fonts/times_bi.ttf',
       weight: '700',
-      style: 'italic',
+      style: 'italic'
     }
   ]
 });

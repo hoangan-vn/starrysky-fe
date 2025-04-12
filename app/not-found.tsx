@@ -1,10 +1,7 @@
 'use client';
 
-import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { HomeLink } from '@/lib/router/coordinator';
-// import { toast } from 'sonner';
-// import { AppIcon } from '@/components/icons';
 import { cn } from '@/lib/utils';
 import { useAppSelector } from '@/hooks/hooks';
 
@@ -12,17 +9,6 @@ export default function NotFound() {
   const t = useTranslations('not-found');
   const headerHeight = useAppSelector((state) => state.headerHeight.headerHeight);
 
-  useEffect(() => {}, []);
-  const handClick = () => {
-    // toast(t('action'), {
-    //   description: 'Sunday, December 03, 2023 at 9:00 AM',
-    //   action: {
-    //     label: 'Undo',
-    //     onClick: () => {}
-    //   },
-    //   icon: <AppIcon width={25} height={25} />
-    // });
-  };
 
   return (
     <div
@@ -40,7 +26,6 @@ export default function NotFound() {
               'rounded-md bg-matisse-200 hover:bg-matisse-300 active:bg-matisse-400 px-3.5 py-2.5 text-sm font-semibold',
               'text-matisse-950 shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2'
             )}
-            onClick={handClick}
           >
             {t('action')}
           </HomeLink>
