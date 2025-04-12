@@ -1,22 +1,22 @@
 {
     "metadata": {
-        "title": "Starry Sky",
-        "description": "© 2025 Starry Sky, Inc. Developed by Hoang An",
+        "title": "Starry Sky - Fast Track Service at Tan Son Nhat Airport",
+        "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!",
         "blogs": {
-            "title": "Starry Sky",
-            "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+            "title": "Starry Sky - Fast Track Service at Tan Son Nhat Airport",
+            "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!"
         },
         "about": {
-            "title": "Starry Sky",
-            "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+            "title": "Starry Sky - Fast Track Service at Tan Son Nhat Airport",
+            "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!"
         },
         "sign-in": {
-            "title": "Starry Sky",
-            "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+            "title": "Starry Sky - Fast Track Service at Tan Son Nhat Airport",
+            "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!"
         },
         "sign-up": {
-            "title": "Starry Sky",
-            "description": "© 2025 Starry Sky, Inc. Developed by Hoang An"
+            "title": "Starry Sky - Fast Track Service at Tan Son Nhat Airport",
+            "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!"
         }
     },
     "home": {
@@ -116,7 +116,8 @@
         "pricing": "Pricing",
         "blogs": "Blogs",
         "about-us": "About Us",
-        "contact": "Contact"
+        "contact": "Contact",
+        "tsn-airport": "Tan Son Nhat Airport"
     },
     "our-service": {
         "international": {
@@ -194,6 +195,25 @@
             "serviceTypeRequired": "Service type is required",
             "messageRequired": "Message is required"
         }
+    },
+    "footer": {
+        "resources": "Resources",
+        "more": "More",
+        "about-us": "About Us",
+        "starry-sky": "Starry Sky",
+        "legal": "Legal",
+        "privacy-policy": "Privacy Policy",
+        "cookie-preferences": "Cookie Preferences",
+        "newsletter-subscription": {
+            "title": "Subscribe to our newsletter",
+            "description": "Stay updated on new services, discount or coupon.",
+            "action": "Subscribe"
+        }
+    },
+    "sonner": {
+        "action": "Under development",
+        "description": "This feature is currently under development. Please contact hotline for more information about the service",
+        "undo": "Undo"
     },
     "endline": ""
 }
