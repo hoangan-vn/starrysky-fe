@@ -11,18 +11,18 @@ import RequirementField from '../widgets/RequirementField';
 import { useTranslations } from 'next-intl';
 import { showSonnerUnderDevelopment } from '@/lib/utils';
 import { AppIcon } from '../icons';
-import Capcha from '../captcha/Captcha';
-import { useAppDispatch, useAppSelector } from '@/hooks/hooks';
-import { checkExpiration } from '@/lib/features/captcha/captchaSlice';
-import { RootState } from '@/lib/store';
-import { useEffect } from 'react';
+// import Capcha from '../captcha/Captcha';
+// import { useAppDispatch, useAppSelector } from '@/hooks/hooks';
+// import { checkExpiration } from '@/lib/features/captcha/captchaSlice';
+// import { RootState } from '@/lib/store';
+// import { useEffect } from 'react';
 
 const ContactForm = () => {
   const t = useTranslations('contact-us');
   const t_sonner = useTranslations('sonner');
 
-  const dispatch = useAppDispatch();
-  const isVerified = useAppSelector((state: RootState) => state.captcha.isVerified);
+  // const dispatch = useAppDispatch();
+  // const isVerified = useAppSelector((state: RootState) => state.captcha.isVerified);
 
   const formSchema = z.object({
     fullname: z.string().min(1, t('errors.fullnameRequired')),
@@ -62,9 +62,9 @@ const ContactForm = () => {
     });
   };
 
-  useEffect(() => {
-    dispatch(checkExpiration());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(checkExpiration());
+  // }, [dispatch]);
 
   return (
     <div>
@@ -127,12 +127,16 @@ const ContactForm = () => {
           <Textarea id='message' {...register('message')} className='mt-1' rows={4} />
           {errors.message && <p className='text-red-500 text-sm mt-1'>{errors.message.message}</p>}
         </div>
-        <div className='w-full flex justify-center items-center'>
+        {/* <div className='w-full flex justify-center items-center'>
           <Capcha />
-        </div>
+        </div> */}
         {/* Submit Button */}
         <div>
-          <Button type='submit' className='bg-orange-500 hover:bg-orange-600 w-full' disabled={!isVerified}>
+          <Button
+            type='submit'
+            className='bg-orange-500 hover:bg-orange-600 w-full'
+            // disabled={!isVerified}
+          >
             {t('sendMessage')}
           </Button>
         </div>

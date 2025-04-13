@@ -1,34 +1,66 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function ZaloContact() {
   const t = useTranslations('header.header-contact.zalo');
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      const userAgent = navigator.userAgent || navigator.vendor;
+      return /android|iphone|ipad|ipod|mobile/i.test(userAgent.toLowerCase());
+    };
+
+    setIsMobile(checkMobile());
+  }, []);
 
   const handleZaloClick = (e: React.MouseEvent<HTMLAnchorElement>): void => {
     e.preventDefault();
+    const phoneNumber = t('ref');
+    const formattedPhone = phoneNumber.replace(/\D/g, '');
 
-    let hasOpenedZalo = false;
+    if (isMobile) {
+      const zaloAppUrl = `zalo://chat?phone=${formattedPhone}`;
+      const zaloWebUrl = `https://zalo.me/${formattedPhone}`;
 
-    const handleBlur = () => {
-      hasOpenedZalo = true;
-      window.removeEventListener('blur', handleBlur);
-    };
-    window.addEventListener('blur', handleBlur);
+      let hasRedirected = false;
 
-    window.location.href = `zalo://chat?phone=${t('ref')}`;
+      const startTime = new Date().getTime();
+      window.location.href = zaloAppUrl;
 
-    setTimeout(() => {
-      if (!hasOpenedZalo) {
-        window.location.href = `https://zalo.me/${t('ref')}`;
-      }
-      window.removeEventListener('blur', handleBlur);
-    }, 3000);
+      const timer = setTimeout(() => {
+        const elapsed = new Date().getTime() - startTime;
+        if (elapsed > 1500 && !hasRedirected) {
+          hasRedirected = true;
+          window.location.href = zaloWebUrl;
+        }
+      }, 1500);
+
+      window.addEventListener(
+        'visibilitychange',
+        () => {
+          if (!document.hidden) {
+            const elapsed = new Date().getTime() - startTime;
+            if (elapsed < 1500) {
+              hasRedirected = true;
+              clearTimeout(timer);
+              window.location.href = zaloWebUrl;
+            }
+          }
+        },
+        { once: true }
+      );
+    } else {
+      window.open(`https://zalo.me/${formattedPhone}`, '_blank');
+    }
   };
+
   return (
     <div className='flex items-center space-x-2'>
       <Image src='/images/zalo.png' alt='Zalo' width={20} height={14} />
       <a
-        href={`zalo://chat?phone=${t('ref')}`}
+        href={`https://zalo.me/${t('ref')}`}
         onClick={(e) => handleZaloClick(e)}
         className='text-blue-600 hover:underline'
         target='_blank'
