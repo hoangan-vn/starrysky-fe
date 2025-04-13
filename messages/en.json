@@ -109,7 +109,8 @@
     "services": {
         "title": "Fast Track Service",
         "description": "Our Fast Track Service ensures a seamless airport experience by meeting guests at the arrival gate or a designated pick-up point at the international terminal, assisting with visa processing if applicable, guiding them through immigration and customs procedures, helping retrieve their luggage, and supporting with security screening procedures. Finally, we escort guests and their luggage to their vehicle or to the boarding lounge for a smooth transition.",
-        "quote": "\"Let us be your trustworthy airport buddy\", and you will never regret it."
+        "quote": "\"Let us be your trustworthy airport buddy\"",
+        "quote-lts": ", and you will never regret it."
     },
     "nav": {
         "services": "Services",
@@ -194,6 +195,10 @@
             "phoneRequired": "Phone number is required",
             "serviceTypeRequired": "Service type is required",
             "messageRequired": "Message is required"
+        },
+        "select-item": {
+            "arrival": "Arrival fast track",
+            "departure": "Departure fast track"
         }
     },
     "footer": {
@@ -215,52 +220,52 @@
         "description": "This feature is currently under development. Please contact hotline for more information about the service",
         "undo": "Undo"
     },
-"form-model": {
-    "alert": "Please verify the CAPTCHA before submitting the form.",
-    "dialog-title": "Experience Fast-Track Immigration with Starry Sky",
-    "dialog-description": "Save time on immigration procedures at the airport",
-    "checkboxes": [
-        "Accompanied directly at the immigration area",
-        "Complete immigration procedures via priority gate",
-        "All-inclusive cost, no additional fees"
-    ],
-    "input-fields": {
-        "name": {
-            "label": "Contact Name",
-            "placeholder": "Full Name",
-            "required": "Contact name is required"
+    "form-model": {
+        "alert": "Please verify the CAPTCHA before submitting the form.",
+        "dialog-title": "Experience Fast-Track Immigration with Starry Sky",
+        "dialog-description": "Save time on immigration procedures at the airport",
+        "checkboxes": [
+            "Accompanied directly at the immigration area",
+            "Complete immigration procedures via priority gate",
+            "All-inclusive cost, no additional fees"
+        ],
+        "input-fields": {
+            "name": {
+                "label": "Contact Name",
+                "placeholder": "Full Name",
+                "required": "Contact name is required"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "name@example.com",
+                "required": "Email is required",
+                "is-valid": "Invalid email address"
+            },
+            "phone": {
+                "label": "Phone Number",
+                "placeholder": "Contact Phone Number",
+                "required": "Phone number is required",
+                "is-valid": "Invalid phone number"
+            },
+            "clients": {
+                "label": "Number of Customers",
+                "placeholder": "Number of Customers"
+            },
+            "specific-request": {
+                "label": "Specific Request",
+                "placeholder": "Specific Request"
+            }
         },
-        "email": {
-            "label": "Email",
-            "placeholder": "name@example.com",
-            "required": "Email is required",
-            "is-valid": "Invalid email address"
-        },
-        "phone": {
-            "label": "Phone Number",
-            "placeholder": "Contact Phone Number",
-            "required": "Phone number is required",
-            "is-valid": "Invalid phone number"
-        },
-        "clients": {
-            "label": "Number of Customers",
-            "placeholder": "Number of Customers"
-        },
-        "specific-request": {
-            "label": "Specific Request",
-            "placeholder": "Specific Request"
-        }
+        "send": "Submit",
+        "footer": [
+            "By continuing, you agree to our",
+            "Terms of Service",
+            "and",
+            "Privacy Policy",
+            "."
+        ],
+        "close": "Close",
+        "dont-show-again": "Don't show again"
     },
-    "send": "Submit",
-    "footer": [
-        "By continuing, you agree to our",
-        "Terms of Service",
-        "and",
-        "Privacy Policy",
-        "."
-    ],
-    "close": "Close",
-    "dont-show-again": "Don't show again"
-},
     "endline": ""
 }

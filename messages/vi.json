@@ -93,7 +93,8 @@
     "services": {
         "title": "Dịch vụ Fast Track",
         "description": "Dịch vụ Fast Track của chúng tôi đảm bảo một trải nghiệm sân bay suôn sẻ bằng cách đón khách tại cổng đến hoặc điểm đón được chỉ định tại nhà ga quốc tế, hỗ trợ khách làm thủ tục visa nếu cần, hướng dẫn khách qua các thủ tục nhập cảnh và hải quan, giúp lấy hành lý, đồng thời hỗ trợ khách làm thủ tục kiểm tra an ninh. Cuối cùng, chúng tôi đưa khách cùng hành lý của họ đến xe hoặc đến phòng chờ lên máy bay để đảm bảo quá trình chuyển tiếp diễn ra mượt mà.",
-        "quote": "\"Hãy để chúng tôi trở thành người bạn đồng hành đáng tin cậy của bạn tại sân bay\", và bạn sẽ không bao giờ hối tiếc."
+        "quote": "\"Hãy để chúng tôi trở thành người bạn đồng hành đáng tin cậy của bạn tại sân bay\"",
+        "quote-lts": ", và bạn sẽ không bao giờ hối tiếc."
     },
     "nav": {
         "services": "Dịch vụ",
@@ -178,6 +179,10 @@
             "phoneRequired": "Số điện thoại là bắt buộc",
             "serviceTypeRequired": "Loại dịch vụ là bắt buộc",
             "messageRequired": "Tin nhắn là bắt buộc"
+        },
+        "select-item": {
+            "arrival": "Đón tiếp nhanh",
+            "departure": "Khởi hành nhanh"
         }
     },
     "footer": {

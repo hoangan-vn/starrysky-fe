@@ -39,17 +39,12 @@ interface FormModelData {
 export default function FormModel({ isOpen, onClose }: FormModelProps) {
   const dispatch = useAppDispatch();
   const isVerified = useAppSelector((state: RootState) => state.captcha.isVerified);
+
   const t_sonner = useTranslations('sonner');
-
-  useEffect(() => {
-    if (isOpen) {
-      dispatch(checkExpiration());
-    }
-  }, [dispatch, isOpen]);
-
   const t = useTranslations('form-model');
   const checkboxes = t.raw('checkboxes') as string[];
   const footers = t.raw('footer') as string[];
+
   const {
     register,
     handleSubmit,
@@ -89,6 +84,12 @@ export default function FormModel({ isOpen, onClose }: FormModelProps) {
     );
     onClose();
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      dispatch(checkExpiration());
+    }
+  }, [dispatch, isOpen]);
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
