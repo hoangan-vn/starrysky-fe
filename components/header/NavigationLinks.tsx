@@ -4,6 +4,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { routerName, useNavLinks } from '@/lib/router/router';
 import { useEffect, useRef } from 'react';
+import { useResponsive } from '@/hooks/useResponsive';
 
 type NavigationLinksProps = {
   className?: string;
@@ -14,23 +15,17 @@ export default function NavigationLinks({ className }: NavigationLinksProps) {
   const pathname = usePathname();
   const navLinks = useNavLinks();
   const pendingScrollTargetRef = useRef<string | null>(null);
+  const { isMobile } = useResponsive();
 
-  // Effect để xử lý scroll sau khi component đã render và DOM đã sẵn sàng
   useEffect(() => {
     if (pendingScrollTargetRef.current && pathname === routerName.home) {
       const targetId = pendingScrollTargetRef.current;
       pendingScrollTargetRef.current = null;
 
-      // Thêm slight delay để đảm bảo DOM đã render
       const timeoutId = setTimeout(() => {
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
-          const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY;
-          const scrollToPosition = offsetTop - window.innerHeight / 2 + targetElement.offsetHeight / 2;
-          window.scrollTo({
-            top: scrollToPosition,
-            behavior: 'smooth'
-          });
+          scrollToElement(targetElement);
         } else {
           console.warn(`Element with id "${targetId}" not found after navigation`);
         }
@@ -38,26 +33,31 @@ export default function NavigationLinks({ className }: NavigationLinksProps) {
 
       return () => clearTimeout(timeoutId);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
+
+  const scrollToElement = (element: HTMLElement): void => {
+    const headerOffset = isMobile ? 80 : 100; // Điều chỉnh giá trị này dựa trên chiều cao header của bạn
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  };
 
   const handleScrollToSection = (link: NavLink, e: React.MouseEvent<HTMLAnchorElement>): void => {
     e.preventDefault();
     const targetId = link.id.toLowerCase().replace(/\s+/g, '-');
 
     if (pathname !== routerName.home) {
-      // Lưu target ID và điều hướng về trang chủ
       pendingScrollTargetRef.current = targetId;
       router.push(routerName.home);
     } else {
-      // Nếu đã ở trang chủ, scroll ngay lập tức
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
-        const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY;
-        const scrollToPosition = offsetTop - window.innerHeight / 2 + targetElement.offsetHeight / 2;
-        window.scrollTo({
-          top: scrollToPosition,
-          behavior: 'smooth'
-        });
+        scrollToElement(targetElement);
       } else {
         console.warn(`Element with id "${targetId}" not found`);
       }

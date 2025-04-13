@@ -3,6 +3,7 @@ import breadcrumbReducer from '@/lib/features/breadcumb/breadcrumbSlice';
 import portalReducer from '@/lib/features/portal/portalSlice';
 import headerHeightReducer from '@/lib/features/header-height/headerHeightSlice';
 import captchaReducer from '@/lib/features/captcha/captchaSlice';
+import searchHistoryReducer from '@/lib/features/search/searchHistorySlice';
 
 export const makeStore = () => {
   return configureStore({
@@ -10,7 +11,8 @@ export const makeStore = () => {
       breadcrumb: breadcrumbReducer,
       portal: portalReducer,
       headerHeight: headerHeightReducer,
-      captcha: captchaReducer
+      captcha: captchaReducer,
+      searchHistory: searchHistoryReducer
     }
   });
 };
