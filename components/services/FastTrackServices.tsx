@@ -14,7 +14,10 @@ export default function FastTrackServices() {
       <div className='w-full md:w-1/2 space-y-4'>
         <h2 className='text-3xl md:text-4xl font-bold text-gray-800'>{t('title')}</h2>
         <p className='text-base md:text-lg text-gray-600 leading-relaxed'>{t('description')}</p>
-        <p className='text-lg md:text-xl font-medium text-gray-700 italic'>{t('quote')}</p>
+        <p className='text-lg md:text-xl font-medium text-gray-700'>
+          <span className='italic'>{t('quote')}</span>
+          {t('quote-lts')}
+        </p>
       </div>
     </div>
   );

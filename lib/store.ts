@@ -2,13 +2,15 @@ import { configureStore } from '@reduxjs/toolkit';
 import breadcrumbReducer from '@/lib/features/breadcumb/breadcrumbSlice';
 import portalReducer from '@/lib/features/portal/portalSlice';
 import headerHeightReducer from '@/lib/features/header-height/headerHeightSlice';
+import captchaReducer from '@/lib/features/captcha/captchaSlice';
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       breadcrumb: breadcrumbReducer,
       portal: portalReducer,
-      headerHeight: headerHeightReducer
+      headerHeight: headerHeightReducer,
+      captcha: captchaReducer
     }
   });
 };
