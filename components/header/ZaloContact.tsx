@@ -2,7 +2,11 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-export default function ZaloContact() {
+type ZaloContactProps = {
+  isIcon?: boolean;
+};
+
+export default function ZaloContact({ isIcon = false }: ZaloContactProps) {
   const t = useTranslations('header.header-contact.zalo');
   const [isMobile, setIsMobile] = useState(false);
 
@@ -57,17 +61,15 @@ export default function ZaloContact() {
   };
 
   return (
-    <div className='flex items-center space-x-2'>
+    <a
+      href={`https://zalo.me/${t('ref')}`}
+      onClick={handleZaloClick}
+      className={`flex items-center ${isIcon ? '' : 'space-x-2'}`}
+      target='_blank'
+      rel='noopener noreferrer'
+    >
       <Image src='/images/zalo.png' alt='Zalo' width={20} height={14} />
-      <a
-        href={`https://zalo.me/${t('ref')}`}
-        onClick={(e) => handleZaloClick(e)}
-        className='text-blue-600 hover:underline'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        {t('tag')}
-      </a>
-    </div>
+      {!isIcon && <span className='text-blue-600 hover:underline'>{t('tag')}</span>}
+    </a>
   );
 }
