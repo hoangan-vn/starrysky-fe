@@ -215,5 +215,52 @@
         "description": "This feature is currently under development. Please contact hotline for more information about the service",
         "undo": "Undo"
     },
+"form-model": {
+    "alert": "Please verify the CAPTCHA before submitting the form.",
+    "dialog-title": "Experience Fast-Track Immigration with Starry Sky",
+    "dialog-description": "Save time on immigration procedures at the airport",
+    "checkboxes": [
+        "Accompanied directly at the immigration area",
+        "Complete immigration procedures via priority gate",
+        "All-inclusive cost, no additional fees"
+    ],
+    "input-fields": {
+        "name": {
+            "label": "Contact Name",
+            "placeholder": "Full Name",
+            "required": "Contact name is required"
+        },
+        "email": {
+            "label": "Email",
+            "placeholder": "name@example.com",
+            "required": "Email is required",
+            "is-valid": "Invalid email address"
+        },
+        "phone": {
+            "label": "Phone Number",
+            "placeholder": "Contact Phone Number",
+            "required": "Phone number is required",
+            "is-valid": "Invalid phone number"
+        },
+        "clients": {
+            "label": "Number of Customers",
+            "placeholder": "Number of Customers"
+        },
+        "specific-request": {
+            "label": "Specific Request",
+            "placeholder": "Specific Request"
+        }
+    },
+    "send": "Submit",
+    "footer": [
+        "By continuing, you agree to our",
+        "Terms of Service",
+        "and",
+        "Privacy Policy",
+        "."
+    ],
+    "close": "Close",
+    "dont-show-again": "Don't show again"
+},
     "endline": ""
 }

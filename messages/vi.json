@@ -199,5 +199,52 @@
         "description": "Chức năng này đang trong quá trình phát triển. Vui lòng liên hệ đường dây nóng để biết thêm về dịch vụ",
         "undo": "Hoàn tác"
     },
+    "form-model": {
+        "alert": "Vui lòng xác minh CAPTCHA trước khi gửi form.",
+        "dialog-title": "Làm thực tập nhập cảnh ưu tiên cùng Starry Sky",
+        "dialog-description": "Tiết kiệm thời gian thực hiện thủ tục nhập cảnh tại sân bay",
+        "checkboxes": [
+            "Có người đi cùng ngay tại khu vực nhập cảnh",
+            "Thực hiện thủ tục nhập cảnh qua cửa ưu tiên",
+            "Chi phí trọn gói, không phát sinh"
+        ],
+        "input-fields": {
+            "name": {
+                "label": "Tên người liên hệ",
+                "placeholder": "Họ và tên",
+                "required": "Tên người liên hệ là bắt buộc"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "name@example.com",
+                "required": "Email là bắt buộc",
+                "is-valid": "Email không hợp lệ"
+            },
+            "phone": {
+                "label": "Số điện thoại",
+                "placeholder": "Số điện thoại liên hệ",
+                "required": "Số điện thoại là bắt buộc",
+                "is-valid": "Số điện thoại không hợp lệ"
+            },
+            "clients": {
+                "label": "Số lượng khách",
+                "placeholder": "Số lượng khách"
+            },
+            "specific-request": {
+                "label": "Yêu cầu cụ thể",
+                "placeholder": "Yêu cầu cụ thể"
+            }
+        },
+        "send": "Gửi",
+        "footer": [
+            "Bằng cách tiếp tục, bạn đồng ý với",
+            "Điều khoản Dịch vụ",
+            "và ",
+            "Chính sách Bảo mật",
+            "của chúng tôi."
+        ],
+        "close": "Đóng",
+        "dont-show-again": "Không hiển thị lại"
+    },
     "endline": ""
 }

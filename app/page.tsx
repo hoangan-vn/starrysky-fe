@@ -1,6 +1,6 @@
 'use client';
 
-import SignUpPortal from '@/components/portal/SignUpPortal';
+import FormPortal from '@/components/portal/FormPortal';
 import Benefits from '@/components/benefits/Benefits';
 import { cn } from '@/lib/utils';
 import FastTrackServices from '@/components/services/FastTrackServices';
@@ -26,7 +26,7 @@ export default function Home() {
         <OurServices />
         <ContactForm />
       </div>
-      <SignUpPortal />
+      <FormPortal />
     </main>
   );
 }

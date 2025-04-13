@@ -14,7 +14,7 @@ import { useTranslations } from 'next-intl';
 import { useNavLinks } from '@/lib/router/router';
 import { showSonnerUnderDevelopment } from '@/lib/utils';
 import { AppIcon } from '../icons';
-import Capcha from '../capcha/Capcha';
+import Capcha from '../captcha/Captcha';
 
 const ContactUs = () => {
   const t = useTranslations('contact-us');
@@ -123,7 +123,9 @@ const ContactUs = () => {
               <Textarea id='message' {...register('message')} className='mt-1' rows={4} />
               {errors.message && <p className='text-red-500 text-sm mt-1'>{errors.message.message}</p>}
             </div>
-            <Capcha />
+            <div className='w-full flex justify-center items-center'>
+              <Capcha />
+            </div>
             {/* Submit Button */}
             <div>
               <Button type='submit' className='bg-orange-500 hover:bg-orange-600 w-full'>

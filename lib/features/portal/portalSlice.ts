@@ -1,12 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 interface ModalState {
-  showSignUpModal: boolean;
+  showFormModal: boolean;
   showPortalIn: string | null;
 }
 
 const getInitialModalState = (): ModalState => {
-  const showSignUpModalStored = typeof window !== 'undefined' ? localStorage.getItem('showSignUpModal') : null;
+  const showFormModalStored = typeof window !== 'undefined' ? localStorage.getItem('showFormModal') : null;
   const showPortalInStored = typeof window !== 'undefined' ? localStorage.getItem('showPortalIn') : null;
 
   const currentTime = Date.now();
@@ -15,17 +15,17 @@ const getInitialModalState = (): ModalState => {
   if (showPortalInStored) {
     const lastClosedTimestamp = parseInt(showPortalInStored, 10);
     if (currentTime - lastClosedTimestamp >= sixtyMinutesInMs) {
-      localStorage.setItem('showSignUpModal', 'true');
+      localStorage.setItem('showFormModal', 'true');
       localStorage.setItem('showPortalIn', currentTime.toString());
       return {
-        showSignUpModal: true,
+        showFormModal: true,
         showPortalIn: currentTime.toString()
       };
     }
   }
 
   return {
-    showSignUpModal: showSignUpModalStored ? showSignUpModalStored === 'true' : true,
+    showFormModal: showFormModalStored ? showFormModalStored === 'true' : true,
     showPortalIn: showPortalInStored || null
   };
 };
@@ -36,11 +36,11 @@ const portalSlice = createSlice({
   name: 'portal',
   initialState,
   reducers: {
-    setShowSignUpModal: (state, action: { payload: { show: boolean; timestamp: string | null } }) => {
-      state.showSignUpModal = action.payload.show;
+    setShowFormModal: (state, action: { payload: { show: boolean; timestamp: string | null } }) => {
+      state.showFormModal = action.payload.show;
       state.showPortalIn = action.payload.timestamp;
 
-      localStorage.setItem('showSignUpModal', action.payload.show.toString());
+      localStorage.setItem('showFormModal', action.payload.show.toString());
       if (action.payload.timestamp) {
         localStorage.setItem('showPortalIn', action.payload.timestamp);
       } else {
@@ -50,5 +50,5 @@ const portalSlice = createSlice({
   }
 });
 
-export const { setShowSignUpModal } = portalSlice.actions;
+export const { setShowFormModal } = portalSlice.actions;
 export default portalSlice.reducer;
