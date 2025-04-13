@@ -95,7 +95,12 @@
     "search": {
         "placeholder": "Search documentation...",
         "windows-shortcut": "Ctrl+K",
-        "apple-shortcut": "⌘ K"
+        "apple-shortcut": "⌘ K",
+        "esc-shortcut": "Esc",
+        "placeholder-dialog": "What are you searching for?",
+        "search": "Search",
+        "clear-all": "Clear all",
+        "recent-searches": "Recent searches"
     },
     "banner": {
         "title": "FAST TRACK",

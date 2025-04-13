@@ -79,7 +79,12 @@
     "search": {
         "placeholder": "Tìm kiếm...",
         "windows-shortcut": "Ctrl+K",
-        "apple-shortcut": "⌘ K"
+        "apple-shortcut": "⌘ K",
+        "esc-shortcut": "Esc",
+        "placeholder-dialog": "Bạn đang tìm kiếm gì?",
+        "search": "Tìm kiếm",
+        "clear-all": "Xóa tất cả",
+        "recent-searches": "Tìm kiếm gần đây"
     },
     "banner": {
         "title": "DỊCH VỤ FAST TRACK",
