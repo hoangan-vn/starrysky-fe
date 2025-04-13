@@ -1,10 +1,13 @@
-// import DOMPurify from 'dompurify';
-
 type HTMLStringType = {
   strTag: string;
+  className?: string;
+  isParagrap?: boolean;
 };
 
-export default function HTMLString({ strTag }: HTMLStringType) {
-  // const sanitizedHtml = DOMPurify.sanitize(strTag);
-  return <div dangerouslySetInnerHTML={{ __html: strTag }} />;
+export default function HTMLString({ strTag, className, isParagrap = false }: HTMLStringType) {
+  return isParagrap ? (
+    <p className={className} dangerouslySetInnerHTML={{ __html: strTag }} />
+  ) : (
+    <div className={className} dangerouslySetInnerHTML={{ __html: strTag }} />
+  );
 }

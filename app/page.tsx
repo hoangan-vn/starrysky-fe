@@ -1,11 +1,11 @@
 'use client';
 
-import SignUpPortal from '@/components/portal/SignUpPortal';
+import FormPortal from '@/components/portal/FormPortal';
 import Benefits from '@/components/benefits/Benefits';
 import { cn } from '@/lib/utils';
 import FastTrackServices from '@/components/services/FastTrackServices';
 import OurServices from '@/components/services/OurServices';
-import ContactForm from '@/components/contact/ContactForm';
+import ContactUs from '@/components/contact/ContactUs';
 import Banner from '@/components/banner/Banner';
 
 export default function Home() {
@@ -24,9 +24,9 @@ export default function Home() {
         </div>
         <FastTrackServices />
         <OurServices />
-        <ContactForm />
+        <ContactUs />
       </div>
-      <SignUpPortal />
+      <FormPortal />
     </main>
   );
 }
