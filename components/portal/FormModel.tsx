@@ -13,7 +13,7 @@ import {
   DialogFooter
 } from '@/components/ui/dialog';
 import { useForm } from 'react-hook-form';
-import Captcha from '../captcha/Captcha';
+// import Captcha from '../captcha/Captcha';
 import { PrivacyLink, TermsLink } from '@/lib/router/coordinator';
 import { useAppDispatch, useAppSelector } from '@/hooks/hooks';
 import { useTranslations } from 'next-intl';
@@ -21,7 +21,8 @@ import RequirementField from '../widgets/RequirementField';
 import { setShowFormModal } from '@/lib/features/portal/portalSlice';
 import { CheckIcon } from '../icons';
 import { useEffect } from 'react';
-import { showSonnerUnderDevelopment } from '@/lib/utils';
+import { cn, showSonnerUnderDevelopment } from '@/lib/utils';
+import { useResponsive } from '@/hooks/useResponsive';
 
 interface FormModelProps {
   isOpen: boolean;
@@ -45,6 +46,7 @@ export default function FormModel({ isOpen, onClose }: FormModelProps) {
   const checkboxes = t.raw('checkboxes') as string[];
   const footers = t.raw('footer') as string[];
 
+  const { isMobile } = useResponsive();
   const {
     register,
     handleSubmit,
@@ -93,7 +95,7 @@ export default function FormModel({ isOpen, onClose }: FormModelProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className='sm:max-w-[600px]'>
+      <DialogContent className={cn('sm:max-w-[600px]', `${isMobile ? 'max-h-[80vh] overflow-y-auto' : ''}`)}>
         <DialogHeader className='flex flex-col justify-center items-center'>
           <DialogTitle>{t('dialog-title')}</DialogTitle>
           <DialogDescription>{t('dialog-description')}</DialogDescription>
@@ -198,14 +200,14 @@ export default function FormModel({ isOpen, onClose }: FormModelProps) {
           </div>
 
           {/* CAPTCHA */}
-          <div className='w-full flex justify-center items-center'>
+          {/* <div className='w-full flex justify-center items-center'>
             <Captcha />
-          </div>
+          </div> */}
 
           <Button
             type='submit'
             className='w-full bg-black text-white hover:bg-gray-800 disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed'
-            disabled={!isVerified}
+            // disabled={!isVerified}
           >
             {t('send')}
           </Button>
