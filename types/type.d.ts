@@ -24,3 +24,8 @@ type NavLink = {
   name: string;
   href: string;
 };
+
+type ServiceCardInfo = {
+  title: string;
+  description: string;
+};
