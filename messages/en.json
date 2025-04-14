@@ -129,43 +129,51 @@
         "international": {
             "title": "International",
             "description": "",
-            "regularArrival": {
-                "title": "Regular Arrival Service",
-                "description": "<li>Pick up guests at the arrival gate or designated pick-up point at the international terminal</li><li>Assist guests with visa procedures (if applicable)</li><li>Assist guests with immigration procedures</li><li>Assist guests with customs procedures</li><li>Assist guests with luggage retrieval</li><li>Escort guests with their luggage to the vehicle</li>"
-            },
-            "vipBArrival": {
-                "title": "VIP B Arrival",
-                "description": "<li>Staff picks up guests at the 'Ông Lớn' bridge, in the area heading straight to CACK without needing to go through the luggage claim area, and escorts guests outside the terminal to their vehicle</li><li>(The staff will take the guest's passport for procedures when meeting the guest and return it to the guest once they are in the vehicle)</li>"
-            },
-            "regularDeparture": {
-                "title": "Regular Departure Service",
-                "description": "<li>Pick up guests at the international passenger departure hall</li><li>Assist guests with check-in procedures</li><li>Assist guests with departure procedures</li><li>Assist guests with customs procedures</li><li>Assist guests with security screening procedures</li><li>Escort guests to the boarding gate</li>"
-            },
-            "regularVipArrival": {
-                "title": "Regular VIP Arrival",
-                "description": "<li>Pick up guests at the immigration area, assist with visa procedures if needed - Guide guests to the luggage claim area, guests retrieve their luggage, then proceed outside</li>"
-            },
-            "regularVipDeparture": {
-                "title": "Regular VIP Departure",
-                "description": "<li>Escort guests for departure procedures (Guests check in themselves, staff escorts them during departure + provides a small gift)</li>"
-            }
+            "services": [
+                {
+                    "title": "VIP B Arrival Service",
+                    "description": "<li>Staff greets passengers at the jet bridge</li><li>Escorts passengers directly to CACK without passing through the baggage claim area</li><li>Assists passengers to exit the terminal and reach their vehicle<br/><span style=\"font-style: italic;\">(Staff will collect the passenger's passport for immigration procedures upon meeting and return it once they are in the vehicle)</span></li>"
+                },
+                {
+                    "title": "Business Class Arrival Service",
+                    "description": "<li>Greets passengers at the arrival gate or designated meeting point at the international terminal</li><li>Assists with visa procedures (if applicable)</li><li>Assists with immigration procedures</li><li>Assists with customs procedures</li><li>Assists with baggage claim</li><li>Escorts passengers and their luggage to the vehicle</li>"
+                },
+                {
+                    "title": "Standard VIP Arrival Service",
+                    "description": "<li>Greets passengers at the immigration area</li><li>Assists with visa procedures if needed</li><li>Guides passengers to the baggage claim area, where passengers retrieve their luggage, then escorts them out</li>"
+                },
+                {
+                    "title": "Business Class Departure Service",
+                    "description": "<li>Greets passengers at the international departure terminal</li><li>Assists with check-in procedures</li><li>Assists with immigration procedures</li><li>Assists with customs procedures</li><li>Assists with security screening</li><li>Escorts passengers to the departure lounge</li>"
+                },
+                {
+                    "title": "Standard VIP Departure Service",
+                    "description": "<li>Assists passengers with immigration procedures (passengers handle check-in independently)</li><li>Staff escorts passengers through priority immigration lanes</li><li>Staff escorts passengers through priority security screening</li>"
+                }
+            ]
         },
         "domestic": {
             "title": "Domestic",
             "description": "",
-            "regularArrival": {
-                "title": "Regular Arrival Service",
-                "description": "<li>Pick up guests at the arrival gate or designated pick-up point at the domestic terminal</li><li>Assist guests with luggage retrieval</li><li>Escort guests with their luggage to the vehicle</li>"
-            },
-            "regularDeparture": {
-                "title": "Regular Departure Service",
-                "description": "<li>Pick up guests at the domestic passenger departure hall</li><li>Assist guests with check-in procedures</li><li>Assist guests with security procedures</li><li>Escort guests to the aircraft</li>"
-            }
+            "services": [
+                {
+                    "title": "VIP B Arrival Service",
+                    "description": "<li>Staff greets passengers at the jet bridge</li><li>Escorts passengers directly to CACK without passing through the baggage claim area</li><li>Assists passengers to exit the terminal and reach their vehicle<br/><span style=\"font-style: italic;\">(Staff will collect the passenger's passport for procedures upon meeting and return it once they are in the vehicle)</span></li>"
+                },
+                {
+                    "title": "Business Class Arrival Service",
+                    "description": "<li>Greets passengers at the arrival gate or designated meeting point at the domestic terminal</li><li>Assists with baggage claim</li><li>Escorts passengers and their luggage to the vehicle</li>"
+                },
+                {
+                    "title": "Business Class Departure Service",
+                    "description": "<li>Greets passengers at the domestic departure terminal</li><li>Assists with check-in procedures</li><li>Assists with security procedures</li><li>Escorts passengers to the boarding gate</li>"
+                }
+            ]
         },
         "fastTrack": {
-            "title": "FAST TRACK AIRPORT SERVICE"
+            "title": "AIRPORT FAST TRACK SERVICE"
         },
-        "apply-now": "Apply now"
+        "apply-now": "Apply Now"
     },
     "under-development": {
         "title": "Feature Under Development",

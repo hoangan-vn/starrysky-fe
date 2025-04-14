@@ -5,6 +5,7 @@ import { showSonnerUnderDevelopment } from '@/lib/utils';
 const InternationalServices = () => {
   const t = useTranslations('our-service.international');
   const t_sonner = useTranslations('sonner');
+  const services = t.raw('services') as ServiceCardInfo[];
 
   const handShowSonner = () => {
     showSonnerUnderDevelopment({
@@ -23,7 +24,10 @@ const InternationalServices = () => {
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-        <ServicesCard
+        {services.map((item: ServiceCardInfo, index: number) => (
+          <ServicesCard key={index} title={item.title} description={item.description} onClick={handShowSonner} />
+        ))}
+        {/* <ServicesCard
           title={t('regularArrival.title')}
           description={t.raw('regularArrival.description')}
           onClick={handShowSonner}
@@ -47,7 +51,7 @@ const InternationalServices = () => {
           title={t('regularVipDeparture.title')}
           description={t.raw('regularVipDeparture.description')}
           onClick={handShowSonner}
-        />
+        /> */}
       </div>
     </section>
   );
