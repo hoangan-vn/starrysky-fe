@@ -211,7 +211,7 @@
     },
     "form-model": {
         "alert": "Vui lòng xác minh CAPTCHA trước khi gửi form.",
-        "dialog-title": "Làm thực tập nhập cảnh ưu tiên cùng Starry Sky",
+        "dialog-title": "Làm thủ tục nhập cảnh ưu tiên cùng Starry Sky",
         "dialog-description": "Tiết kiệm thời gian thực hiện thủ tục nhập cảnh tại sân bay",
         "checkboxes": [
             "Có người đi cùng ngay tại khu vực nhập cảnh",
@@ -255,6 +255,15 @@
         ],
         "close": "Đóng",
         "dont-show-again": "Không hiển thị lại"
+    },
+    "pricing": {
+        "international": "International",
+        "domestic": "Domestic",
+        "business-arrival": "Business Arrival",
+        "standard-vip-arrival": "Standard VIP Arrival",
+        "business-departure": "Business Departure",
+        "standard-vip-departure": "Standard VIP Departure",
+        "contact": "Contact"
     },
     "endline": ""
 }
