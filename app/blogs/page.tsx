@@ -1,5 +1,11 @@
-import UnderDevelopment from '@/components/widgets/UnderDevelopment';
+import ComparionPage from '@/components/comparison/ComparionPage';
+// import UnderDevelopment from '@/components/widgets/UnderDevelopment';
 
 export default function page() {
-  return <UnderDevelopment />;
+  return (
+    <div>
+      {/* <UnderDevelopment /> */}
+      <ComparionPage />
+    </div>
+  );
 }
