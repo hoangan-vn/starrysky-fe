@@ -272,5 +272,16 @@
         "close": "Close",
         "dont-show-again": "Don't show again"
     },
+    "pricing": {
+        "international": "International",
+        "domestic": "Domestic",
+        "title": "Pricing",
+        "popular": "Popular",
+        "business-arrival": "Business Arrival",
+        "standard-vip-arrival": "Standard VIP Arrival",
+        "business-departure": "Business Departure",
+        "standard-vip-departure": "Standard VIP Departure",
+        "contact": "Contact"
+    },
     "endline": ""
 }
