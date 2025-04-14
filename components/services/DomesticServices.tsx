@@ -27,16 +27,6 @@ const DomesticServices = () => {
         {services.map((item: ServiceCardInfo, index: number) => (
           <ServicesCard key={index} title={item.title} description={item.description} onClick={handShowSonner} />
         ))}
-        {/* <ServicesCard
-          title={t('regularArrival.title')}
-          description={t.raw('regularArrival.description')}
-          onClick={handShowSonner}
-        />
-        <ServicesCard
-          title={t('regularDeparture.title')}
-          description={t.raw('regularDeparture.description')}
-          onClick={handShowSonner}
-        /> */}
       </div>
     </section>
   );

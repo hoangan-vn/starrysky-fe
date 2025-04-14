@@ -27,31 +27,6 @@ const InternationalServices = () => {
         {services.map((item: ServiceCardInfo, index: number) => (
           <ServicesCard key={index} title={item.title} description={item.description} onClick={handShowSonner} />
         ))}
-        {/* <ServicesCard
-          title={t('regularArrival.title')}
-          description={t.raw('regularArrival.description')}
-          onClick={handShowSonner}
-        />
-        <ServicesCard
-          title={t('vipBArrival.title')}
-          description={t.raw('vipBArrival.description')}
-          onClick={handShowSonner}
-        />
-        <ServicesCard
-          title={t('regularDeparture.title')}
-          description={t.raw('regularDeparture.description')}
-          onClick={handShowSonner}
-        />
-        <ServicesCard
-          title={t('regularVipArrival.title')}
-          description={t.raw('regularVipArrival.description')}
-          onClick={handShowSonner}
-        />
-        <ServicesCard
-          title={t('regularVipDeparture.title')}
-          description={t.raw('regularVipDeparture.description')}
-          onClick={handShowSonner}
-        /> */}
       </div>
     </section>
   );
