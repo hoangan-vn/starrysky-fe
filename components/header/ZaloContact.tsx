@@ -1,15 +1,20 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { JSX, useEffect, useState } from 'react';
+import RenderIf from '../widgets/RenderIf';
 
 type ZaloContactProps = {
   isIcon?: boolean;
+  icon?: JSX.Element;
+  phone?: string;
 };
 
-export default function ZaloContact({ isIcon = false }: ZaloContactProps) {
+export default function ZaloContact({ icon, phone, isIcon = false }: ZaloContactProps) {
   const t = useTranslations('header.header-contact.zalo');
   const [isMobile, setIsMobile] = useState(false);
-
+  const phoneNumber = phone ?? t('ref');
   useEffect(() => {
     const checkMobile = () => {
       const userAgent = navigator.userAgent || navigator.vendor;
@@ -21,7 +26,6 @@ export default function ZaloContact({ isIcon = false }: ZaloContactProps) {
 
   const handleZaloClick = (e: React.MouseEvent<HTMLAnchorElement>): void => {
     e.preventDefault();
-    const phoneNumber = t('ref');
     const formattedPhone = phoneNumber.replace(/\D/g, '');
 
     if (isMobile) {
@@ -62,14 +66,19 @@ export default function ZaloContact({ isIcon = false }: ZaloContactProps) {
 
   return (
     <a
-      href={`https://zalo.me/${t('ref')}`}
+      href={`https://zalo.me/${phoneNumber}`}
       onClick={handleZaloClick}
       className={`flex items-center ${isIcon ? '' : 'space-x-2'}`}
       target='_blank'
       rel='noopener noreferrer'
     >
-      <Image src='/images/zalo.png' alt='Zalo' width={20} height={14} />
-      {!isIcon && <span className='text-blue-600 hover:underline'>{t('tag')}</span>}
+      <RenderIf condition={icon === undefined}>
+        <Image src='/images/zalo.png' alt='Zalo' width={20} height={14} />
+      </RenderIf>
+      <RenderIf condition={icon !== undefined}>{icon}</RenderIf>
+      <RenderIf condition={!isIcon}>
+        <span className='text-blue-600 hover:underline'>{t('tag')}</span>
+      </RenderIf>
     </a>
   );
 }
