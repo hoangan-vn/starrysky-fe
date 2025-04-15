@@ -5,6 +5,7 @@ import { useAboutNavLinks, useMoreNavLinks, useNavLinks, usePolicyNavLinks } fro
 import { useTranslations } from 'next-intl';
 import Logo from '../logo/Logo';
 import NewsletterSubscription from './NewsletterSubscription';
+import ZaloContact from '../header/ZaloContact';
 
 export default function Footer() {
   const navLinks = useNavLinks();
@@ -64,11 +65,9 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className='mt-10 flex justify-between items-center border-t pt-6'>
-          <p className='text-sm text-gray-600'>© 2025 Starry Sky Co.,Ltd | Deveoped by Hoang An</p>
+          <p className='text-sm text-gray-600'>© 2025 Starry Sky Co.,Ltd | Developed by Hoang An</p>
           <div className='flex space-x-4'>
-            <NavLink href='zalo://chat?phone=0779672566' className='text-gray-600 hover:text-gray-900'>
-              <MessageCircle className='w-5 h-5' />
-            </NavLink>
+            <ZaloContact isIcon icon={<MessageCircle className='w-5 h-5' />} phone='0779672566' />
           </div>
         </div>
       </div>

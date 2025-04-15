@@ -7,6 +7,7 @@ import StoreProvider from '@/app/StoreProvider';
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
 import { Toaster } from '@/components/ui/sonner';
+import Head from 'next/head';
 // import ChatButton from '@/components/chat/ChatButton';
 
 const times = localFont({
@@ -52,6 +53,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <Head>
+        <meta name='google-site-verification' content='0yGDbl7oqMmKMf-W6lD0UyrT9coaZNqLS9x9GKeOE38' />
+      </Head>
       <body className={`${times.className} antialiased`}>
         <StoreProvider>
           <NextIntlClientProvider>
