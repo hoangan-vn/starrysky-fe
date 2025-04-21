@@ -7,8 +7,6 @@ import StoreProvider from '@/app/StoreProvider';
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
 import { Toaster } from '@/components/ui/sonner';
-import Head from 'next/head';
-// import ChatButton from '@/components/chat/ChatButton';
 
 const times = localFont({
   src: [
@@ -40,7 +38,18 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
   return {
     title: t('title'),
-    description: t('description')
+    description: t('description'),
+    keywords: t.raw('keywords') as string[],
+    robots: 'index, follow',
+    other: {
+      'google-site-verification': '0yGDbl7oqMmKMf-W6lD0UyrT9coaZNqLS9x9GKeOE38'
+    },
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      url: 'https://starrysky.com.vn',
+      type: 'website'
+    }
   };
 }
 
@@ -53,9 +62,6 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <Head>
-        <meta name='google-site-verification' content='0yGDbl7oqMmKMf-W6lD0UyrT9coaZNqLS9x9GKeOE38' />
-      </Head>
       <body className={`${times.className} antialiased`}>
         <StoreProvider>
           <NextIntlClientProvider>
@@ -63,7 +69,6 @@ export default async function RootLayout({
             {children}
             <Footer />
             <Toaster />
-            {/* Thêm vào sau */}
             {/* <ChatButton /> */}
           </NextIntlClientProvider>
         </StoreProvider>

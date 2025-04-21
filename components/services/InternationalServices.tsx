@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import ServicesCard from './ServicesCard';
-import { showSonnerUnderDevelopment } from '@/lib/utils';
+import { showSonner } from '@/lib/utils';
 
 const InternationalServices = () => {
   const t = useTranslations('our-service.international');
@@ -8,7 +8,7 @@ const InternationalServices = () => {
   const services = t.raw('services') as ServiceCardInfo[];
 
   const handShowSonner = () => {
-    showSonnerUnderDevelopment({
+    showSonner({
       action: t_sonner('action'),
       description: t_sonner('description'),
       label: t_sonner('undo'),
