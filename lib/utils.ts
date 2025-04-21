@@ -7,15 +7,15 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-type SonnerUnderDevelopmentType = {
-  action: string;
-  description: string;
-  label: string;
-  icon: JSX.Element;
+type SonnerType = {
+  action?: string;
+  description?: string;
+  label?: string;
+  icon?: JSX.Element;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
-export function showSonnerUnderDevelopment({ action, description, label, onClick, icon }: SonnerUnderDevelopmentType) {
+export function showSonner({ action, description, label, onClick, icon }: SonnerType) {
   const defaultOnClick = () => {};
 
   toast(action, {

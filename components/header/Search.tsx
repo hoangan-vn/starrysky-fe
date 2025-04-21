@@ -6,7 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogT
 import { Button } from '@/components/ui/button';
 import { useResponsive } from '@/hooks/useResponsive';
 import RenderIf from '@/components/widgets/RenderIf';
-import { cn, showSonnerUnderDevelopment } from '@/lib/utils';
+import { cn, showSonner } from '@/lib/utils';
 import { DeviceBrandtypeEnum } from '@/lib/enum';
 import { RootState } from '@/lib/store';
 import { addSearchQuery, clearSearchHistory } from '@/lib/features/search/searchHistorySlice';
@@ -33,7 +33,7 @@ export default function Search({ className }: SearchProps) {
   const handleSearch = () => {
     if (searchQuery.trim()) {
       dispatch(addSearchQuery(searchQuery));
-      showSonnerUnderDevelopment({
+      showSonner({
         action: t_sonner('action'),
         description: t_sonner('description'),
         label: t_sonner('undo'),
