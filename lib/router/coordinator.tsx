@@ -24,14 +24,6 @@ export function AboutLink({ className, onClick, children }: RoutingProps) {
   );
 }
 
-export function BlogsLink({ className, onClick, children, slug }: RoutingProps) {
-  return (
-    <NavLink href={`${routerName.blogs}/${slug}`} className={className} onClick={onClick}>
-      {children}
-    </NavLink>
-  );
-}
-
 export function SignInLink({ className, onClick, children }: RoutingProps) {
   return (
     <NavLink href={routerName['sign-in']} className={className} onClick={onClick}>
