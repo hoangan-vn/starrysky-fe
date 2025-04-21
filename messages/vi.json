@@ -1,7 +1,21 @@
 {
     "metadata": {
         "title": "Starry Sky - Dịch Vụ Fast Track Sân Bay Tân Sơn Nhất",
-        "description": "Khám phá dịch vụ Fast Track chuyên nghiệp tại Sân bay Tân Sơn Nhất với Starry Sky. Tiết kiệm thời gian, trải nghiệm hành trình suôn sẻ!"
+        "description": "Khám phá dịch vụ Fast Track chuyên nghiệp tại Sân bay Tân Sơn Nhất với Starry Sky. Tiết kiệm thời gian, trải nghiệm hành trình suôn sẻ!",
+        "keywords": [
+            "Starry Sky",
+            "Fast track",
+            "Tan Son Nhat Airport",
+            "Service",
+            "Save time",
+            "journey",
+            "visa",
+            "Bầu trời sao",
+            "Sân bay Tân Sơn Nhất",
+            "Dịch vụ",
+            "Tiết kiệm thời gian",
+            "Hành trình"
+        ]
     },
     "home": {
         "home": "Trang chủ",
@@ -173,6 +187,11 @@
         "serviceTypeLabel": "Loại Dịch Vụ",
         "messageLabel": "Tin Nhắn",
         "sendMessage": "Gửi Tin Nhắn",
+        "confirmTitle": "Xác nhận gửi",
+        "confirmDescription": "Bạn có chắc chắn muốn gửi tin nhắn này không?",
+        "cancel": "Hủy",
+        "sending": "Đang gửi...",
+        "confirm": "Xác nhận",
         "address": {
             "title": "Địa Chỉ",
             "content": "Công ty THHH Starry Sky, TP.Hồ Chí Minh, Việt Nam"
@@ -214,8 +233,13 @@
     },
     "sonner": {
         "action": "Đang phát triển",
+        "error-label": "Lỗi",
+        "success-label": "Thành công",
         "description": "Chức năng này đang trong quá trình phát triển. Vui lòng liên hệ đường dây nóng để biết thêm về dịch vụ",
-        "undo": "Hoàn tác"
+        "undo": "Hoàn tác",
+        "success": "Thao tác thành công",
+        "error": "Thao tác thất bại",
+        "errorMessage": "Gửi email thất bại"
     },
     "form-model": {
         "alert": "Vui lòng xác minh CAPTCHA trước khi gửi form.",

@@ -3,14 +3,14 @@
 import { useTranslations } from 'next-intl';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { showSonnerUnderDevelopment } from '@/lib/utils';
+import { showSonner } from '@/lib/utils';
 
 export default function NewsletterSubscription() {
   const t = useTranslations('footer.newsletter-subscription');
   const t_sonner = useTranslations('sonner');
 
   const handleClick = () => {
-    showSonnerUnderDevelopment({
+    showSonner({
       action: t_sonner('action'),
       description: t_sonner('description'),
       label: t_sonner('undo'),

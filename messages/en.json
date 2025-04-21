@@ -2,22 +2,20 @@
     "metadata": {
         "title": "Starry Sky - Fast Track Service at Tan Son Nhat Airport",
         "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!",
-        "blogs": {
-            "title": "Starry Sky - Fast Track Service at Tan Son Nhat Airport",
-            "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!"
-        },
-        "about": {
-            "title": "Starry Sky - Fast Track Service at Tan Son Nhat Airport",
-            "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!"
-        },
-        "sign-in": {
-            "title": "Starry Sky - Fast Track Service at Tan Son Nhat Airport",
-            "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!"
-        },
-        "sign-up": {
-            "title": "Starry Sky - Fast Track Service at Tan Son Nhat Airport",
-            "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!"
-        }
+        "keywords": [
+            "Starry Sky",
+            "Fast track",
+            "Tan Son Nhat Airport",
+            "Service",
+            "Save time",
+            "journey",
+            "visa",
+            "Bầu trời sao",
+            "Sân bay Tân Sơn Nhất",
+            "Dịch vụ",
+            "Tiết kiệm thời gian",
+            "Hành trình"
+        ]
     },
     "home": {
         "home": "Home",
@@ -189,6 +187,11 @@
         "serviceTypeLabel": "Service Type",
         "messageLabel": "Message",
         "sendMessage": "Send Message",
+        "confirmTitle": "Confirm Submission",
+        "confirmDescription": "Are you sure you want to send this message?",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "sending": "Sending",
         "address": {
             "title": "Address",
             "content": "Starry Sky Co.,Ltd Ho Chi Minh City, Vietnam"
@@ -230,8 +233,13 @@
     },
     "sonner": {
         "action": "Under development",
+        "error-label":"Error",
+        "success-label":"Success",
         "description": "This feature is currently under development. Please contact hotline for more information about the service",
-        "undo": "Undo"
+        "undo": "Undo",
+        "success":"The operation is successful",
+        "error":"The operation is failure",
+        "errorMessage":"Failed to send email"
     },
     "form-model": {
         "alert": "Please verify the CAPTCHA before submitting the form.",

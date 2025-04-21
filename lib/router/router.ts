@@ -3,7 +3,6 @@ import { useTranslations } from 'next-intl';
 export const routerName = {
   home: '/',
   about: '/about-us',
-  blogs: '/blogs',
   'sign-in': '/sign-in',
   'sign-up': '/sign-up',
   terms: '/terms',
@@ -22,7 +21,6 @@ export const useNavLinks = (): NavLink[] => {
   return [
     { id: 'services', name: t('services'), href: routerName.services },
     { id: 'pricing', name: t('pricing'), href: routerName.pricing },
-    { id: 'blogs', name: t('blogs'), href: routerName.blogs },
     { id: 'about-us', name: t('about-us'), href: routerName.about },
     { id: 'contact', name: t('contact'), href: routerName.non }
   ];
