@@ -15,7 +15,11 @@
             "Dịch vụ",
             "Tiết kiệm thời gian",
             "Hành trình"
-        ]
+        ],
+        "services":{
+            "title": "Fast Track Service at Tan Son Nhat Airport",
+            "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!"
+        }
     },
     "home": {
         "home": "Home",

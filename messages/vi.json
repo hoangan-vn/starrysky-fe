@@ -15,7 +15,11 @@
             "Dịch vụ",
             "Tiết kiệm thời gian",
             "Hành trình"
-        ]
+        ],
+        "services": {
+            "title": "Dịch Vụ Fast Track Sân Bay Tân Sơn Nhất",
+            "description": "Khám phá dịch vụ Fast Track chuyên nghiệp tại Sân bay Tân Sơn Nhất với Starry Sky. Tiết kiệm thời gian, trải nghiệm hành trình suôn sẻ!"
+        }
     },
     "home": {
         "home": "Trang chủ",
