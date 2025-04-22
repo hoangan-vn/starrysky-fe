@@ -1,10 +1,9 @@
 import OurServices from '@/components/services/OurServices';
 import { Metadata } from 'next';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata(): Promise<Metadata> {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const t = useTranslations('metadata');
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
     title: t('services.title'),
@@ -23,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: t('title'),
       description: t('description'),
-      url: 'https://starrysky.com.vn',
+      url: 'https://starrysky.com.vn/services',
       type: 'website'
     }
   };
@@ -32,6 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function page() {
   return (
     <div>
+      
       <OurServices />
     </div>
   );
