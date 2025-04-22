@@ -40,7 +40,13 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     title: t('title'),
     description: t('description'),
     keywords: t.raw('keywords') as string[],
-    robots: 'index, follow',
+    robots: {
+      index: true,
+      follow: true
+    },
+    icons: {
+      icon: '/favicon.ico'
+    },
     other: {
       'google-site-verification': '0yGDbl7oqMmKMf-W6lD0UyrT9coaZNqLS9x9GKeOE38'
     },
