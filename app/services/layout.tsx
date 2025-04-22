@@ -1,9 +1,8 @@
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-import { ReactNode } from 'react';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: 'metadata' });
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: 'metadata' });
 
   return {
     title: t('services.title'),
@@ -28,10 +27,6 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-interface ServicesLayoutProps {
-  children: ReactNode;
-}
-
-export default function ServicesLayout({ children }: ServicesLayoutProps) {
+export default function ServicesLayout({ children }: LayoutProps) {
   return children;
 }
