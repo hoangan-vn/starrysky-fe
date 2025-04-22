@@ -1,9 +1,10 @@
 import OurServices from '@/components/services/OurServices';
 import { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: 'metadata' });
+export async function generateMetadata(): Promise<Metadata> {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const t = useTranslations('metadata');
 
   return {
     title: t('services.title'),
