@@ -29,10 +29,3 @@ type ServiceCardInfo = {
   title: string;
   description: string;
 };
-
-interface LayoutProps {
-  children: ReactNode;
-  params: {
-    locale: string;
-  };
-}

@@ -1,8 +1,10 @@
+import { getUserLocale } from '@/lib/locale';
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const t = await getTranslations({ locale: params.locale, namespace: 'metadata' });
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getUserLocale();
+  const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
     title: t('services.title'),
@@ -27,6 +29,10 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   };
 }
 
-export default function ServicesLayout({ children }: LayoutProps) {
+export default function ServicesLayout({
+  children
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return children;
 }

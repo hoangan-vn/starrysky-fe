@@ -7,6 +7,7 @@ import StoreProvider from '@/app/StoreProvider';
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
 import { Toaster } from '@/components/ui/sonner';
+import { getUserLocale } from '@/lib/locale';
 
 const times = localFont({
   src: [
@@ -33,7 +34,8 @@ const times = localFont({
   ]
 });
 
-export async function generateMetadata({ params: { locale } }: LayoutProps): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getUserLocale();
   const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
