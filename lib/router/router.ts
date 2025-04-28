@@ -20,7 +20,7 @@ export const useNavLinks = (): NavLink[] => {
 
   return [
     { id: 'services', name: t('services'), href: routerName.services },
-    { id: 'pricing', name: t('pricing'), href: routerName.pricing },
+    // { id: 'pricing', name: t('pricing'), href: routerName.pricing },
     { id: 'about-us', name: t('about-us'), href: routerName.about },
     { id: 'contact', name: t('contact'), href: routerName.non }
   ];

@@ -14,11 +14,21 @@
             "Sân bay Tân Sơn Nhất",
             "Dịch vụ",
             "Tiết kiệm thời gian",
-            "Hành trình"
+            "Hành trình",
+            "VIP airport transfer",
+            "fast track service",
+            "quick airport procedures",
+            "time-saving",
+            "Starry Sky",
+            "airport services"
         ],
         "services": {
             "title": "Fast Track Service at Tan Son Nhat Airport",
             "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!"
+        },
+        "about": {
+            "title": "About Starry Sky - VIP Airport Transfer Services",
+            "description": "Learn about Starry Sky, offering premium VIP airport transfer services with fast procedures, time-saving solutions, and tailored services to meet all your needs."
         }
     },
     "home": {
@@ -314,6 +324,45 @@
         "business-departure": "Business Departure",
         "standard-vip-departure": "Standard VIP Departure",
         "contact": "Contact"
+    },
+    "about-us": {
+        "title": "About Starry Sky",
+        "subtitle": "VIP Airport Transfer Service - Fast Procedures - Time-Saving - Tailored Solutions",
+        "intro": {
+            "title": "Who We Are",
+            "description": "Starry Sky is proud to offer premium VIP airport transfer services with swift procedures, time-saving solutions, and customized services to meet all your needs. We are committed to providing a comfortable, convenient, and stress-free travel experience, ensuring your journey starts effortlessly."
+        },
+        "fastTrack": {
+            "title": "Fast Track Service",
+            "description": "Have you ever felt exhausted waiting in long queues at the airport? Starry Sky's Fast Track service is the perfect solution, offering priority access to dedicated lanes, saving time, and reducing stress during your airport journey. The ideal choice for those who value comfort and efficiency.",
+            "benefits": [
+                {
+                    "title": "Swift & Convenient",
+                    "description": "Designed to complete procedures quickly, eliminating time-related worries."
+                },
+                {
+                    "title": "Time-Saving",
+                    "description": "Start your journey as soon as you arrive at the airport, without long waits."
+                },
+                {
+                    "title": "Dedicated Support",
+                    "description": "Our professional staff assists with check-in, immigration, and baggage claim procedures."
+                },
+                {
+                    "title": "For All Passengers",
+                    "description": "Suitable for all travelers, regardless of age or requirements."
+                },
+                {
+                    "title": "Comfort & Stress Relief",
+                    "description": "Ensures convenience and relaxation, especially after long flights."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Experience Starry Sky's Services Today!",
+            "description": "Let us accompany you on your journey with our high-quality VIP airport transfer services.",
+            "button": "Explore Services"
+        }
     },
     "endline": ""
 }

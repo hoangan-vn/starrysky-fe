@@ -14,11 +14,21 @@
             "Sân bay Tân Sơn Nhất",
             "Dịch vụ",
             "Tiết kiệm thời gian",
-            "Hành trình"
+            "Hành trình",
+            "đưa đón sân bay VIP",
+            "dịch vụ fast track",
+            "thủ tục sân bay nhanh chóng",
+            "tiết kiệm thời gian",
+            "Starry Sky",
+            "dịch vụ sân bay"
         ],
         "services": {
             "title": "Dịch Vụ Fast Track Sân Bay Tân Sơn Nhất",
             "description": "Khám phá dịch vụ Fast Track chuyên nghiệp tại Sân bay Tân Sơn Nhất với Starry Sky. Tiết kiệm thời gian, trải nghiệm hành trình suôn sẻ!"
+        },
+        "about": {
+            "title": "Về Starry Sky - Dịch Vụ Đưa Đón Sân Bay VIP",
+            "description": "Tìm hiểu về Starry Sky, cung cấp dịch vụ đưa đón sân bay VIP với thủ tục nhanh chóng, tiết kiệm thời gian và đáp ứng mọi yêu cầu của khách hàng."
         }
     },
     "home": {
@@ -312,6 +322,45 @@
         "business-departure": "Business Departure",
         "standard-vip-departure": "Standard VIP Departure",
         "contact": "Contact"
+    },
+    "about-us": {
+        "title": "Về Starry Sky",
+        "subtitle": "Dịch Vụ Đưa Đón Sân Bay VIP - Thủ Tục Nhanh Chóng - Tiết Kiệm Thời Gian",
+        "intro": {
+            "title": "Giới Thiệu Về Chúng Tôi",
+            "description": "Starry Sky tự hào cung cấp dịch vụ đưa đón sân bay VIP với thủ tục nhanh chóng, tiết kiệm thời gian và đáp ứng mọi yêu cầu của khách hàng. Chúng tôi cam kết mang đến trải nghiệm di chuyển thoải mái, tiện nghi và không căng thẳng, giúp bạn bắt đầu chuyến đi một cách dễ dàng nhất."
+        },
+        "fastTrack": {
+            "title": "Dịch Vụ Fast Track",
+            "description": "Bạn đã bao giờ cảm thấy mệt mỏi khi phải chờ đợi trong hàng dài tại sân bay chưa? Dịch vụ Fast Track của Starry Sky là giải pháp lý tưởng, giúp quý hành khách được ưu tiên trong các hàng chờ và vào các lối đi riêng, tiết kiệm thời gian và giảm bớt căng thẳng trong quá trình di chuyển tại sân bay. Lựa chọn hoàn hảo cho những ai ưu tiên tiện nghi và hiệu quả.",
+            "benefits": [
+                {
+                    "title": "Nhanh Chóng & Thuận Tiện",
+                    "description": "Dịch vụ được thiết kế để hoàn thành thủ tục nhanh chóng, không lo lắng về thời gian."
+                },
+                {
+                    "title": "Tiết Kiệm Thời Gian",
+                    "description": "Bắt đầu chuyến đi ngay khi đến sân bay, không phải chờ đợi lâu."
+                },
+                {
+                    "title": "Hỗ Trợ Tận Tình",
+                    "description": "Đội ngũ nhân viên chuyên nghiệp hỗ trợ hoàn thành mọi thủ tục như check-in, xuất/nhập cảnh, và nhận hành lý."
+                },
+                {
+                    "title": "Phù Hợp Mọi Hành Khách",
+                    "description": "Dịch vụ dành cho mọi đối tượng, không phân biệt độ tuổi hay nhu cầu."
+                },
+                {
+                    "title": "Thoải Mái & Giảm Căng Thẳng",
+                    "description": "Tạo sự thuận tiện và thoải mái, đặc biệt sau những chuyến bay dài."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Trải Nghiệm Dịch Vụ Của Starry Sky Ngay Hôm Nay!",
+            "description": "Hãy để chúng tôi đồng hành cùng bạn trong hành trình với dịch vụ đưa đón sân bay VIP chất lượng cao.",
+            "button": "Khám Phá Dịch Vụ"
+        }
     },
     "endline": ""
 }
