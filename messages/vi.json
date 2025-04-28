@@ -133,22 +133,27 @@
             "description": "",
             "services": [
                 {
+                    "id": "1",
                     "title": "Dịch vụ Đón Tiếp VIP B",
                     "description": "<li>Nhân viên đón khách tại cửa Ống lồng</li><li> Đưa khách đi thẳng đến CACK mà không cần qua khu vực lấy hành lý</li><li>Hỗ trợ đưa khách ra ngoài nhà ga đến xe của họ<br/><span style=\"font-style: italic;\">(Nhân viên sẽ lấy hộ chiếu của khách để làm thủ tục khi gặp khách và trả lại hộ chiếu cho khách khi họ đã lên xe)</ span></li>"
                 },
                 {
+                    "id": "2",
                     "title": "Dịch vụ Đón Tiếp Thương Gia",
                     "description": "<li>Đón khách tại cổng đến hoặc điểm đón được chỉ định tại nhà ga quốc tế</li><li>Hỗ trợ khách làm thủ tục visa (nếu có)</li><li>Hỗ trợ khách làm thủ tục nhập cảnh</li><li>Hỗ trợ khách làm thủ tục hải quan</li><li>Hỗ trợ khách lấy hành lý</li><li>Đưa khách cùng hành lý đến xe</li>"
                 },
                 {
+                    "id": "3",
                     "title": "Dịch vụ Đón Tiếp VIP Phổ Thông",
                     "description": "<li>Đón khách tại khu vực nhập cảnh</li><li>Hỗ trợ làm thủ tục visa nếu cần</li><li>Hướng dẫn khách đến khu vực lấy hành lý, khách tự lấy hành lý, sau đó đi ra ngoài</li>"
                 },
                 {
+                    "id": "4",
                     "title": "Dịch vụ Khởi Hành Thương Gia",
                     "description": "<li>Đón khách tại sảnh khởi hành quốc tế hành khách đi</li><li>Hỗ trợ khách làm thủ tục Check-in</li><li>Hỗ trợ khách làm thủ tục xuất cảnh</li><li>Hỗ trợ khách làm thủ tục hải quan</li><li>Hỗ trợ khách làm thủ tục kiểm tra an ninh soi chiếu</li><li>Tiễn khách đến ra sảnh chờ lên máy bay</li>"
                 },
                 {
+                    "id": "5",
                     "title": "Dịch vụ Khởi Hành VIP Phổ Thông",
                     "description": "<li>Đưa khách làm thủ tục xuất cảnh (Khách tự làm thủ tục check-in)</li><li>Nhân viên đưa khách xuất cảnh nhanh thông qua lối đi ưu tiên</li><li>Nhân viên đưa khách qua máy Soi chiếu thông qua lối đi ưu tiên</li>"
                 }
@@ -159,14 +164,17 @@
             "description": "",
             "services": [
                 {
+                    "id": "1",
                     "title": "Dịch vụ Đón Tiếp VIP B",
                     "description": "<li>Nhân viên đón khách tại cửa Ống lồng</li><li> Đưa khách đi thẳng đến CACK mà không cần qua khu vực lấy hành lý</li><li>Hỗ trợ đưa khách ra ngoài nhà ga đến xe của họ<br/><span style=\"font-style: italic;\">(Nhân viên sẽ lấy hộ chiếu của khách để làm thủ tục khi gặp khách và trả lại hộ chiếu cho khách khi họ đã lên xe)</span></li>"
                 },
                 {
+                    "id": "2",
                     "title": "Dịch vụ Đón Tiếp Thương Gia",
                     "description": "<li>Đón khách tại cổng đến hoặc điểm đón được chỉ định tại nhà ga nội địa</li><li>Hỗ trợ khách lấy hành lý</li><li>Đưa khách cùng hành lý đến xe</li>"
                 },
                 {
+                    "id": "3",
                     "title": "Dịch vụ Khởi Hành Thương Gia",
                     "description": "<li>Đón khách tại sảnh khởi hành hành khách nội địa đi</li><li>Hỗ trợ khách làm thủ tục Check-in</li><li>Hỗ trợ khách làm thủ tục an ninh</li><li>Đưa khách đến cửa ra máy bay</li>"
                 }
@@ -183,6 +191,8 @@
         "back-to-home": "Quay lại Trang Chủ"
     },
     "contact-us": {
+        "dateLabel": "Ngày",
+        "date-placeholder": "Chọn ngày",
         "title": "Liên Hệ Với Chúng Tôi",
         "description": "Vui lòng liên hệ với chúng tôi, chúng tôi rất muốn nghe ý kiến từ bạn và sẽ phản hồi sớm nhất có thể!",
         "fullnameLabel": "Họ và Tên",
@@ -191,6 +201,7 @@
         "serviceTypeLabel": "Loại Dịch Vụ",
         "messageLabel": "Tin Nhắn",
         "sendMessage": "Gửi Tin Nhắn",
+        "apply": "Đăng ký",
         "confirmTitle": "Xác nhận gửi",
         "confirmDescription": "Bạn có chắc chắn muốn gửi tin nhắn này không?",
         "cancel": "Hủy",
@@ -214,7 +225,8 @@
             "invalidEmail": "Địa chỉ email không hợp lệ",
             "phoneRequired": "Số điện thoại là bắt buộc",
             "serviceTypeRequired": "Loại dịch vụ là bắt buộc",
-            "messageRequired": "Tin nhắn là bắt buộc"
+            "messageRequired": "Tin nhắn là bắt buộc",
+            "invalidDate": "Ngày là bắt buộc"
         },
         "select-item": {
             "arrival": "Đón tiếp nhanh",

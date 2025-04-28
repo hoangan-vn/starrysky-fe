@@ -1,19 +1,14 @@
 import { useTranslations } from 'next-intl';
 import ServicesCard from './ServicesCard';
-import { showSonner } from '@/lib/utils';
+import { useRouter } from 'next/navigation';
 
 const InternationalServices = () => {
   const t = useTranslations('our-service.international');
-  const t_sonner = useTranslations('sonner');
   const services = t.raw('services') as ServiceCardInfo[];
+  const router = useRouter();
 
-  const handShowSonner = () => {
-    showSonner({
-      action: t_sonner('action'),
-      description: t_sonner('description'),
-      label: t_sonner('undo'),
-      icon: <></>
-    });
+  const handleShowItem = (service: ServiceCardInfo) => {
+    router.push(`/services/${service.id}?category=international`);
   };
 
   return (
@@ -25,7 +20,12 @@ const InternationalServices = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
         {services.map((item: ServiceCardInfo, index: number) => (
-          <ServicesCard key={index} title={item.title} description={item.description} onClick={handShowSonner} />
+          <ServicesCard
+            key={index}
+            title={item.title}
+            description={item.description}
+            onClick={() => handleShowItem(item)}
+          />
         ))}
       </div>
     </section>
