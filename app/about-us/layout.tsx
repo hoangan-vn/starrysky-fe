@@ -7,8 +7,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
-    title: t('services.title'),
-    description: t('services.description'),
+    title: t('about.title'),
+    description: t('about.description'),
     keywords: t.raw('keywords') as string[],
     robots: {
       index: true,
@@ -21,9 +21,9 @@ export async function generateMetadata(): Promise<Metadata> {
       'google-site-verification': '0yGDbl7oqMmKMf-W6lD0UyrT9coaZNqLS9x9GKeOE38'
     },
     openGraph: {
-      title: t('services.title'),
-      description: t('services.description'),
-      url: 'https://starrysky.com.vn/services',
+      title: t('about.title'),
+      description: t('about.description'),
+      url: 'https://starrysky.com.vn/about-us',
       type: 'website'
     }
   };

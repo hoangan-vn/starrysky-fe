@@ -6,7 +6,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Button } from '@/components/ui/button';
 import {
   AlertDialog,
@@ -18,20 +17,37 @@ import {
   AlertDialogHeader,
   AlertDialogTitle
 } from '@/components/ui/alert-dialog';
-import RequirementField from '../widgets/RequirementField';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { showSonner } from '@/lib/utils';
-import { AppIcon } from '../icons';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Calendar } from '@/components/ui/calendar';
+import { format } from 'date-fns';
+import { vi, enUS } from 'date-fns/locale';
+import { CalendarIcon } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import { AppIcon } from '@/components/icons';
+import RequirementField from '@/components/widgets/RequirementField';
 
-const ContactForm = () => {
+interface ApllyFormProps {
+  serviceTitle: string;
+}
+
+const ApllyForm = ({ serviceTitle }: ApllyFormProps) => {
   const t = useTranslations('contact-us');
   const t_sonner = useTranslations('sonner');
+  const locale = useLocale();
 
+  const dateLocale = locale === 'vi' ? vi : enUS;
+
+  // Schema của form, message không bắt buộc
   const formSchema = z.object({
     fullname: z.string().min(1, t('errors.fullnameRequired')),
     email: z.string().email(t('errors.invalidEmail')),
     phone: z.string().min(1, t('errors.phoneRequired')),
     serviceType: z.string().min(1, t('errors.serviceTypeRequired')),
+    date: z.date().refine((date) => date >= new Date(), {
+      message: t('errors.invalidDate')
+    }),
     message: z.string().optional()
   });
 
@@ -49,7 +65,8 @@ const ContactForm = () => {
       fullname: '',
       email: '',
       phone: '',
-      serviceType: '',
+      serviceType: serviceTitle,
+      date: undefined,
       message: ''
     },
     mode: 'onChange'
@@ -58,6 +75,8 @@ const ContactForm = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [formDataToSubmit, setFormDataToSubmit] = useState<FormData | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const selectedDate = watch('date');
 
   const onSubmit = async (data: FormData) => {
     if (!isValid) {
@@ -69,6 +88,7 @@ const ContactForm = () => {
       });
       return;
     }
+
     setFormDataToSubmit(data);
     setIsDialogOpen(true);
   };
@@ -78,27 +98,18 @@ const ContactForm = () => {
 
     try {
       setIsSubmitting(true);
-      const res = await fetch('/api/send-email', {
+      const res = await fetch('/api/apply-services', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formDataToSubmit)
+        body: JSON.stringify({
+          ...formDataToSubmit,
+          date: format(formDataToSubmit.date, 'yyyy-MM-dd')
+        })
       });
 
       if (res.ok) {
-        let responseData;
-        const contentType = res.headers.get('content-type');
-
-        if (contentType && contentType.includes('application/json')) {
-          try {
-            responseData = await res.json();
-            console.log('Response: ', responseData);
-          } catch (jsonError) {
-            console.warn('Could not parse JSON response:', jsonError);
-          }
-        }
-
         showSonner({
           action: t_sonner('success-label'),
           description: t_sonner('success'),
@@ -107,7 +118,7 @@ const ContactForm = () => {
         });
       } else {
         let errorMessage = t_sonner('errorMessage');
-
+        console.error('Error reading response text:', errorMessage);
         try {
           const errorData = await res.text();
           if (errorData && errorData.startsWith('{') && errorData.endsWith('}')) {
@@ -118,7 +129,7 @@ const ContactForm = () => {
           console.error('Error reading response text:', textError);
         }
 
-        console.error('Failed to send email:', errorMessage);
+        console.error('Failed to send request:', errorMessage);
         showSonner({
           action: t_sonner('error-label'),
           description: t_sonner('error'),
@@ -127,7 +138,7 @@ const ContactForm = () => {
         });
       }
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error('Error sending request:', error);
       showSonner({
         action: t_sonner('error-label'),
         description: t_sonner('error'),
@@ -143,7 +154,6 @@ const ContactForm = () => {
 
   return (
     <div>
-      <p className='text-gray-600 mb-6'>{t('description')}</p>
       <form onSubmit={handleSubmit(onSubmit)} className='space-y-6'>
         {/* Fullname */}
         <div>
@@ -182,16 +192,50 @@ const ContactForm = () => {
           <label htmlFor='serviceType' className='block text-sm font-medium'>
             {t('serviceTypeLabel')} <RequirementField />
           </label>
-          <Select onValueChange={(value) => setValue('serviceType', value)} value={watch('serviceType')}>
-            <SelectTrigger className='mt-1'>
-              <SelectValue placeholder='Select a service type' />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value={t('select-item.arrival')}>{t('select-item.arrival')}</SelectItem>
-              <SelectItem value={t('select-item.departure')}>{t('select-item.departure')}</SelectItem>
-            </SelectContent>
-          </Select>
+          <Input
+            id='serviceType'
+            value={serviceTitle}
+            disabled
+            className='mt-1 bg-gray-100'
+            {...register('serviceType')}
+          />
           {errors.serviceType && <p className='text-red-500 text-sm mt-1'>{errors.serviceType.message}</p>}
+        </div>
+
+        {/* Date Picker */}
+        <div>
+          <label htmlFor='date' className='block text-sm font-medium'>
+            {t('dateLabel')} <RequirementField />
+          </label>
+          <Popover>
+            <PopoverTrigger asChild>
+              <Button
+                variant='outline'
+                className={cn(
+                  'w-full justify-start text-left font-normal mt-1',
+                  !selectedDate && 'text-muted-foreground'
+                )}
+              >
+                <CalendarIcon className='mr-2 h-4 w-4' />
+                {selectedDate ? (
+                  format(selectedDate, 'PPP', { locale: dateLocale })
+                ) : (
+                  <span>{t('date-placeholder')}</span>
+                )}
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent className='w-auto p-0'>
+              <Calendar
+                mode='single'
+                selected={selectedDate}
+                onSelect={(date) => setValue('date', date as Date, { shouldValidate: true })}
+                disabled={(date) => date < new Date()}
+                initialFocus
+                locale={dateLocale}
+              />
+            </PopoverContent>
+          </Popover>
+          {errors.date && <p className='text-red-500 text-sm mt-1'>{errors.date.message}</p>}
         </div>
 
         {/* Message */}
@@ -205,7 +249,7 @@ const ContactForm = () => {
         {/* Submit Button */}
         <div>
           <Button type='submit' className='bg-orange-500 hover:bg-orange-600 w-full' disabled={isSubmitting}>
-            {isSubmitting ? t('sending') : t('sendMessage')}
+            {isSubmitting ? t('sending') : t('apply')}
           </Button>
         </div>
       </form>
@@ -228,4 +272,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default ApllyForm;

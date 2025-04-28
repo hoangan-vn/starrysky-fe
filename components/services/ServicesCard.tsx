@@ -19,7 +19,7 @@ export default function ServicesCard({ title, description, onClick }: ServicesCa
       </CardHeader>
       <CardContent className='flex flex-col h-full justify-between'>
         <ul className='mb-5'>
-          <HTMLString strTag={description} />
+          <HTMLString className='' strTag={description} />
         </ul>
         <div className='flex justify-center items-center'>
           <Button className='bg-yellow-500 hover:bg-yellow-600 text-white w-1/3' onClick={onClick}>

@@ -26,6 +26,7 @@ type NavLink = {
 };
 
 type ServiceCardInfo = {
+  id: string;
   title: string;
   description: string;
 };
