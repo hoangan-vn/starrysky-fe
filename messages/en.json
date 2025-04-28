@@ -14,11 +14,21 @@
             "Sân bay Tân Sơn Nhất",
             "Dịch vụ",
             "Tiết kiệm thời gian",
-            "Hành trình"
+            "Hành trình",
+            "VIP airport transfer",
+            "fast track service",
+            "quick airport procedures",
+            "time-saving",
+            "Starry Sky",
+            "airport services"
         ],
-        "services":{
+        "services": {
             "title": "Fast Track Service at Tan Son Nhat Airport",
             "description": "Experience seamless travel with Starry Sky’s Fast Track service at Tan Son Nhat Airport. Save time and enjoy a hassle-free journey!"
+        },
+        "about": {
+            "title": "About Starry Sky - VIP Airport Transfer Services",
+            "description": "Learn about Starry Sky, offering premium VIP airport transfer services with fast procedures, time-saving solutions, and tailored services to meet all your needs."
         }
     },
     "home": {
@@ -133,22 +143,27 @@
             "description": "",
             "services": [
                 {
+                    "id": "1",
                     "title": "VIP B Arrival Service",
                     "description": "<li>Staff greets passengers at the jet bridge</li><li>Escorts passengers directly to CACK without passing through the baggage claim area</li><li>Assists passengers to exit the terminal and reach their vehicle<br/><span style=\"font-style: italic;\">(Staff will collect the passenger's passport for immigration procedures upon meeting and return it once they are in the vehicle)</span></li>"
                 },
                 {
+                    "id": "2",
                     "title": "Business Class Arrival Service",
                     "description": "<li>Greets passengers at the arrival gate or designated meeting point at the international terminal</li><li>Assists with visa procedures (if applicable)</li><li>Assists with immigration procedures</li><li>Assists with customs procedures</li><li>Assists with baggage claim</li><li>Escorts passengers and their luggage to the vehicle</li>"
                 },
                 {
+                    "id": "3",
                     "title": "Standard VIP Arrival Service",
                     "description": "<li>Greets passengers at the immigration area</li><li>Assists with visa procedures if needed</li><li>Guides passengers to the baggage claim area, where passengers retrieve their luggage, then escorts them out</li>"
                 },
                 {
+                    "id": "4",
                     "title": "Business Class Departure Service",
                     "description": "<li>Greets passengers at the international departure terminal</li><li>Assists with check-in procedures</li><li>Assists with immigration procedures</li><li>Assists with customs procedures</li><li>Assists with security screening</li><li>Escorts passengers to the departure lounge</li>"
                 },
                 {
+                    "id": "5",
                     "title": "Standard VIP Departure Service",
                     "description": "<li>Assists passengers with immigration procedures (passengers handle check-in independently)</li><li>Staff escorts passengers through priority immigration lanes</li><li>Staff escorts passengers through priority security screening</li>"
                 }
@@ -159,14 +174,17 @@
             "description": "",
             "services": [
                 {
+                    "id": "1",
                     "title": "VIP B Arrival Service",
                     "description": "<li>Staff greets passengers at the jet bridge</li><li>Escorts passengers directly to CACK without passing through the baggage claim area</li><li>Assists passengers to exit the terminal and reach their vehicle<br/><span style=\"font-style: italic;\">(Staff will collect the passenger's passport for procedures upon meeting and return it once they are in the vehicle)</span></li>"
                 },
                 {
+                    "id": "2",
                     "title": "Business Class Arrival Service",
                     "description": "<li>Greets passengers at the arrival gate or designated meeting point at the domestic terminal</li><li>Assists with baggage claim</li><li>Escorts passengers and their luggage to the vehicle</li>"
                 },
                 {
+                    "id": "3",
                     "title": "Business Class Departure Service",
                     "description": "<li>Greets passengers at the domestic departure terminal</li><li>Assists with check-in procedures</li><li>Assists with security procedures</li><li>Escorts passengers to the boarding gate</li>"
                 }
@@ -183,6 +201,8 @@
         "back-to-home": "Back to Home"
     },
     "contact-us": {
+        "dateLabel": "Date",
+        "date-placeholder": "Choose a date",
         "title": "Contact Us",
         "description": "Please get in touch with us, we'd like to hear from you and will reach to you soon as possible!",
         "fullnameLabel": "Fullname",
@@ -191,6 +211,7 @@
         "serviceTypeLabel": "Service Type",
         "messageLabel": "Message",
         "sendMessage": "Send Message",
+        "apply": "Apply",
         "confirmTitle": "Confirm Submission",
         "confirmDescription": "Are you sure you want to send this message?",
         "cancel": "Cancel",
@@ -214,7 +235,8 @@
             "invalidEmail": "Invalid email address",
             "phoneRequired": "Phone number is required",
             "serviceTypeRequired": "Service type is required",
-            "messageRequired": "Message is required"
+            "messageRequired": "Message is required",
+            "invalidDate": "Date is required"
         },
         "select-item": {
             "arrival": "Arrival fast track",
@@ -237,13 +259,13 @@
     },
     "sonner": {
         "action": "Under development",
-        "error-label":"Error",
-        "success-label":"Success",
+        "error-label": "Error",
+        "success-label": "Success",
         "description": "This feature is currently under development. Please contact hotline for more information about the service",
         "undo": "Undo",
-        "success":"The operation is successful",
-        "error":"The operation is failure",
-        "errorMessage":"Failed to send email"
+        "success": "The operation is successful",
+        "error": "The operation is failure",
+        "errorMessage": "Failed to send email"
     },
     "form-model": {
         "alert": "Please verify the CAPTCHA before submitting the form.",
@@ -302,6 +324,45 @@
         "business-departure": "Business Departure",
         "standard-vip-departure": "Standard VIP Departure",
         "contact": "Contact"
+    },
+    "about-us": {
+        "title": "About Starry Sky",
+        "subtitle": "VIP Airport Transfer Service - Fast Procedures - Time-Saving - Tailored Solutions",
+        "intro": {
+            "title": "Who We Are",
+            "description": "Starry Sky is proud to offer premium VIP airport transfer services with swift procedures, time-saving solutions, and customized services to meet all your needs. We are committed to providing a comfortable, convenient, and stress-free travel experience, ensuring your journey starts effortlessly."
+        },
+        "fastTrack": {
+            "title": "Fast Track Service",
+            "description": "Have you ever felt exhausted waiting in long queues at the airport? Starry Sky's Fast Track service is the perfect solution, offering priority access to dedicated lanes, saving time, and reducing stress during your airport journey. The ideal choice for those who value comfort and efficiency.",
+            "benefits": [
+                {
+                    "title": "Swift & Convenient",
+                    "description": "Designed to complete procedures quickly, eliminating time-related worries."
+                },
+                {
+                    "title": "Time-Saving",
+                    "description": "Start your journey as soon as you arrive at the airport, without long waits."
+                },
+                {
+                    "title": "Dedicated Support",
+                    "description": "Our professional staff assists with check-in, immigration, and baggage claim procedures."
+                },
+                {
+                    "title": "For All Passengers",
+                    "description": "Suitable for all travelers, regardless of age or requirements."
+                },
+                {
+                    "title": "Comfort & Stress Relief",
+                    "description": "Ensures convenience and relaxation, especially after long flights."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Experience Starry Sky's Services Today!",
+            "description": "Let us accompany you on your journey with our high-quality VIP airport transfer services.",
+            "button": "Explore Services"
+        }
     },
     "endline": ""
 }
