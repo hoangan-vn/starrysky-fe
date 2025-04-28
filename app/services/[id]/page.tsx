@@ -10,17 +10,14 @@ interface ServiceCardInfo {
 }
 
 interface ServicePageProps {
-  params: {
-    id: string;
-  };
-  searchParams?: {
-    category?: string;
-  };
+  params: Promise<{ id: string }>;
+  searchParams?: Promise<{ category?: string }>;
 }
 
 export default async function ServicePage({ params, searchParams }: ServicePageProps) {
-  const { id } = params;
-  const categoriesId = searchParams?.category === 'international' ? 1 : 2;
+  const { id } = await params;
+  const resolvedSearchParams = await searchParams;
+  const categoriesId = resolvedSearchParams?.category === 'international' ? 1 : 2;
 
   const service = await fetchServiceById(categoriesId, id);
 
